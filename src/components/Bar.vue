@@ -1,6 +1,7 @@
 <template>
     <div class="bar-container" v-on:mousemove="movePreview">
         <div class="bar"></div>
+        <img id="visible-preview" v-if="scale == '0'" src="./../assets/visible.png">
         <Preview v-bind:leftPos="leftPos"/>
         <div class="between">
         <Guider
@@ -12,7 +13,6 @@
          />
         </div>
         <Markings 
-             v-bind:markingsList="markingsList"
              v-if="scale != '3'"
         />
     </div>
@@ -60,5 +60,12 @@ export default {
     height: 200px;
     width: 90%;
     margin: auto;
+}
+#visible-preview {
+    position: absolute;
+    width: 001.328795135%;
+    left: 68.56075802%;
+    height: 25px;
+    transform: translateY(-50%);
 }
 </style>
