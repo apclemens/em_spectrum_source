@@ -1,22 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <Markings scale="0"/>
+    <Bar scale="0" v-bind:centerPositions="centerPositions" v-on:updatePositions="updatePos($event, 0)"/>
+    <Bar scale="1" v-bind:centerPositions="centerPositions" v-on:updatePositions="updatePos($event, 1)"/>
+    <Bar scale="2" v-bind:centerPositions="centerPositions" v-on:updatePositions="updatePos($event, 2)"/>
+    <Bar scale="3" v-bind:centerPositions="centerPositions" v-on:updatePositions="updatePos($event, 3)"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Bar from './components/Bar.vue'
+import Markings from './components/Markings.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Bar,
+    Markings,
+  },
+  data() {
+      return {
+          centerPositions: [0, 0, 0, 0],
+      }
+  },
+  methods: {
+      updatePos: function(event, scale) {
+          this.centerPositions[scale] = event / (0.9 * window.innerWidth);
+      }
   }
 }
 </script>
 
 <style>
+body {
+    margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
