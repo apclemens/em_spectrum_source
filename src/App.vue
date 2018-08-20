@@ -29,6 +29,14 @@ export default {
       }
   }
 }
+
+function pos_to_freq(pos) {
+    return 10**(pos*20)*3;
+}
+
+function freq_to_pos(freq) {
+    return Math.log10(freq/3)/20;
+}
 </script>
 
 <style>
