@@ -19,10 +19,9 @@ export default {
 
 <style>
 .guider {
-    position: relative;
-    height: 200px;
-    width: 90%;
-    margin: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 .box {
     height: 100%;
