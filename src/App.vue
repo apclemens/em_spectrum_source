@@ -1,10 +1,10 @@
 <template>
   <div id="app">
       <Markings scale="0"/>
-    <Bar scale="0" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 0)"/>
-    <Bar scale="1" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 1)"/>
-    <Bar scale="2" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 2)"/>
-    <Bar scale="3" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 3)"/>
+    <Bar ref="0" scale="0" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 0)"/>
+    <Bar ref="1" scale="1" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 1)"/>
+    <Bar ref="2" scale="2" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 2)"/>
+    <Bar ref="3" scale="3" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 3)"/>
   </div>
 </template>
 
@@ -35,6 +35,13 @@ export default {
                       pos_to_freq(this.centerFrequencyRanges[scale-1][0], this.centerFrequencyRanges[scale-1][1], this.centerPositions[scale]-0.05), 
                       pos_to_freq(this.centerFrequencyRanges[scale-1][0], this.centerFrequencyRanges[scale-1][1], this.centerPositions[scale]+0.05)
                   ]
+          }
+          if (scale != 3) { // update box location below
+              this.$refs[scale+1].movePreviewWithoutUpdating(
+                this.centerFrequencyRanges[scale][0],
+                this.centerFrequencyRanges[scale][1],
+                this.centerFrequencyRanges[scale+1][0]
+              );
           }
       }
   }

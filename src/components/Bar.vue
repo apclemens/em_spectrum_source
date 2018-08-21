@@ -62,6 +62,10 @@ export default {
         freq_to_pos: function(startFreq, endFreq, freq) {
             return Math.log10(freq/startFreq) / Math.log10(endFreq/startFreq);
         },
+        movePreviewWithoutUpdating: function(A, B, freq) {
+            this.leftPos = this.freq_to_pos(A, B, freq) * 0.9*window.innerWidth;
+            console.log(this.leftPos);
+        },
     },
 }
 </script>
