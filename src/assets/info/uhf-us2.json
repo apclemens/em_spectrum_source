@@ -1,5 +1,25 @@
 {"uhfus": [
   {
+    "title": "test1",
+    "start": 1e3,
+    "end": 1e4,
+    "bar": 1
+  },
+  {
+    "title": "test2",
+    "start": 1e4,
+    "end": 1e5,
+    "bar": 1
+  },
+  {
+    "title": "test3",
+    "start": 1e5,
+    "end": 1e6,
+    "bar": 1
+  },
+  
+  
+  {
     "title": "Government use, including meteorology, military aviation, and federal two-way use",
     "start": 225e6,
     "end": 420e6,
