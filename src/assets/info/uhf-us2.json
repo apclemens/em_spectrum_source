@@ -6,6 +6,12 @@
     "bar": 1
   },
   {
+    "title": "AC power grids",
+    "start": 50,
+    "end": 60,
+    "bar": 2
+  },
+  {
     "title": "Government use, including meteorology, military aviation, and federal two-way use",
     "start": 225e6,
     "end": 420e6,
