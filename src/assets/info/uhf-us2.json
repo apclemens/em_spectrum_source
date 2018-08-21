@@ -65,6 +65,56 @@
     "end": 3e9,
     "bar": 1
   },
+  
+  {
+    "title": "Far infrared",
+    "start": 300e9,
+    "end": 20e12,
+    "bar": 1
+  },
+  {
+    "title": "Mid infrared",
+    "start": 20e12,
+    "end": 214e12,
+    "bar": 1
+  },
+  {
+    "title": "Near infrared",
+    "start": 214e12,
+    "end": 400e12,
+    "bar": 1
+  },
+  {
+    "title": "Near ultraviolet",
+    "start": 400e12,
+    "end": 2.418e15,
+    "bar": 1
+  },
+  {
+    "title": "Extreme ultraviolet",
+    "start": 2.418e15,
+    "end": 2.998e16,
+    "bar": 1
+  },
+  {
+    "title": "Soft x-rays",
+    "start": 2.998e16,
+    "end": 1.5e18,
+    "bar": 1
+  },
+  {
+    "title": "Hard x-rays",
+    "start": 1.5e18,
+    "end": 3e18,
+    "bar": 1
+  },
+  {
+    "title": "Gamma rays",
+    "start": 3e18,
+    "end": 3e20,
+    "bar": 1
+  },
+  
   {
     "title": "AC power grids",
     "start": 50,
