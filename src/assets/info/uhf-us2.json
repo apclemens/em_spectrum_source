@@ -1,5 +1,29 @@
 {"uhfus": [
   {
+    "title": "Station Tests and transatlantic reception window",
+    "start": 135.7e3,
+    "end": 136e3,
+    "bar": 3
+  },
+  {
+    "title": "Telegraphy",
+    "start": 136e3,
+    "end": 137.4e3,
+    "bar": 3
+  },
+  {
+    "title": "Non-Telegraphy digital modes",
+    "start": 137.4e3,
+    "end": 137.6e3,
+    "bar": 3
+  },
+  {
+    "title": "Very slow telegraphy centred on 137.7 kHz",
+    "start": 137.6e3,
+    "end": 137.8e3,
+    "bar": 3
+  },
+  {
     "title": "2200-meter band, the lowest frequency band in which amateur radio operators are allowed to transmit",
     "start": 135.7e3,
     "end": 137.8e3,
