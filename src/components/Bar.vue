@@ -1,20 +1,26 @@
 <template>
     <div class="bar-container" v-on:mousemove="movePreview">
-        <div class="bar"></div>
+        <div class="bar">
+                 </div>
         <img id="visible-preview" v-if="scale == '0'" src="./../assets/visible.png">
-        <Preview v-bind:leftPos="leftPos"/>
+        <Preview v-if="scale != '3'" v-bind:leftPos="leftPos"/>
         <div class="between">
             <Guider
+                 v-if="scale != '3'"
                  v-bind:leftPos="leftPos"
             />
             <ClassList
                  v-if="scale == '0'"
              />
             <Information
+                 ref="info"
                  v-else
+                 v-bind:information="information"
+                 v-bind:scale="scale"
              />
         </div>
         <Markings 
+                 v-if="scale != '3'"
              v-bind:centerPos="centerPositions[scale]"
              v-bind:centerFrequencyRange="centerFrequencyRanges[scale]"
              v-bind:markings="markings"
@@ -32,7 +38,7 @@ import Information from './Information.vue'
 
 export default {
     name: 'Bar',
-    props: ['scale', 'centerPositions', 'centerFrequencyRanges'],
+    props: ['scale', 'centerPositions', 'centerFrequencyRanges', 'information'],
     components: {
         Preview,
         Guider,
@@ -69,6 +75,7 @@ export default {
         },
         movePreviewWithoutUpdating: function(A, B, freq) {
             this.leftPos = this.freq_to_pos(A, B, freq) * 0.9*window.innerWidth;
+            this.$refs['info'].move(A, B, freq);
         },
     },
 }

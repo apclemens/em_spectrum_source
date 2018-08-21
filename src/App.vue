@@ -1,10 +1,10 @@
 <template>
   <div id="app">
       <Markings scale="0"/>
-    <Bar ref="0" scale="0" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 0)"/>
-    <Bar ref="1" scale="1" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 1)"/>
-    <Bar ref="2" scale="2" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 2)"/>
-    <Bar ref="3" scale="3" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-on:updatePositions="updatePos($event, 3)"/>
+    <Bar ref="0" scale="0" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[0]" v-on:updatePositions="updatePos($event, 0)"/>
+    <Bar ref="1" scale="1" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[1]" v-on:updatePositions="updatePos($event, 1)"/>
+    <Bar ref="2" scale="2" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[2]" v-on:updatePositions="updatePos($event, 2)"/>
+    <Bar ref="3" scale="3" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[3]" v-on:updatePositions="updatePos($event, 3)"/>
   </div>
 </template>
 
@@ -18,10 +18,31 @@ export default {
     Bar,
     Markings,
   },
+  mounted() {
+      var xhr = new XMLHttpRequest();
+      var ths = this;
+      xhr.open('GET', 'https://rawgit.com/apclemens/em_spectrum_source/master/src/assets/info/uhf-us2.json', true);
+      xhr.responseType = 'json';
+      xhr.onload = function() {
+          var status = xhr.status;
+          if (status === 200) {
+              var data = xhr.response.uhfus;
+              var band;
+              for (var i=0; i<data.length; i++) {
+                  band = data[i];
+                  ths.information[band.bar].push(band);
+              }
+          } else {
+              console.log(xhr.response);
+          }
+      };
+      xhr.send();
+  },
   data() {
       return {
           centerPositions: [0, 0, 0, 0],
           centerFrequencyRanges: [[3e-1, 3e1], [1, 1], [1, 1], [1, 1]],
+          information: [[],[],[],[]],
       }
   },
   methods: {
