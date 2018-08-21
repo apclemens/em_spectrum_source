@@ -18,7 +18,7 @@
     "bar": 1
   },
   {
-    "title": "Low frequency (LF): exhibits low signal attenuation, making them suitable for long-distance communications. In Europe and areas of Northern Africa and Asia, part of the LF spectrum is used for AM broadcasting as the "longwave" band. In the western hemisphere, its main use is for aircraft beacon, navigation (LORAN), information, and weather systems. A number of time signal broadcasts are also broadcast in this band.",
+    "title": "Low frequency (LF): exhibits low signal attenuation, making them suitable for long-distance communications. In Europe and areas of Northern Africa and Asia, part of the LF spectrum is used for AM broadcasting as the \"longwave\" band. In the western hemisphere, its main use is for aircraft beacon, navigation (LORAN), information, and weather systems. A number of time signal broadcasts are also broadcast in this band.",
     "start": 30e3,
     "end": 30e4,
     "bar": 1
@@ -30,7 +30,7 @@
     "bar": 1
   },
   {
-    "title": "High frequency (HF): Because radio waves in this band can be reflected back to Earth by the ionosphere layer in the atmosphere – a method known as "skip" or "skywave" propagation – these frequencies are suitable for long-distance communication across intercontinental distances. The band is used by international shortwave broadcasting stations (2.31–25.82 MHz), aviation communication, government time stations, weather stations, amateur radio and citizens band services, among other uses.",
+    "title": "High frequency (HF): Because radio waves in this band can be reflected back to Earth by the ionosphere layer in the atmosphere – a method known as \"skip\" or \"skywave\" propagation – these frequencies are suitable for long-distance communication across intercontinental distances. The band is used by international shortwave broadcasting stations (2.31–25.82 MHz), aviation communication, government time stations, weather stations, amateur radio and citizens band services, among other uses.",
     "start": 3e6,
     "end": 30e6,
     "bar": 1
