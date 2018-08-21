@@ -7,7 +7,7 @@
             </div>
         </div>
         <div v-else class="hertz">
-            <div v-for="(n, index) in markings" class="mark" v-bind:key=index v-bind:style="{left: ((index)*10)+'%'}">
+            <div v-for="(n, index) in markings" class="mark" v-bind:key=index v-bind:style="{left: (placements[index]*100)+'%'}">
                 {{n.toExponential(2)}}
             </div>
         </div>
@@ -43,6 +43,7 @@ export default {
 .hertz {
     width: 90%;
     margin: auto;
+    overflow: hidden;
 }
 .mark {
     display: inline-block;
