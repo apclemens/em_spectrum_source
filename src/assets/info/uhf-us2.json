@@ -1,5 +1,11 @@
 {"uhfus": [
   {
+    "title": "Schumann resonances are the principal background in this part of the electromagnetic spectrum",
+    "start": 3,
+    "end": 60,
+    "bar": 2
+  },
+  {
     "title": "Used for pipeline inspections gauges (PIGs) to determine location of gauge inside a pipeline",
     "start": 22,
     "end": 22,
@@ -9,6 +15,30 @@
     "title": "Fundamental Schumann resonance, frequency at which the wavelength equals the circumference of the Earth",
     "start": 7.83,
     "end": 7.83,
+    "bar": 3
+  },
+  {
+    "title": "Secondary Schumann resonance",
+    "start": 14.3,
+    "end": 14.3,
+    "bar": 3
+  },
+  {
+    "title": "Third Schumann resonance",
+    "start": 20.8,
+    "end": 20.8,
+    "bar": 3
+  },
+  {
+    "title": "Fourth Schumann resonance",
+    "start": 27.3,
+    "end": 27.3,
+    "bar": 3
+  },
+  {
+    "title": "Fifth Schumann resonance",
+    "start": 33.8,
+    "end": 33.8,
     "bar": 3
   },
   {
