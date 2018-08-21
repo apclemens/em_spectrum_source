@@ -104,6 +104,13 @@ function frequencyToRGB(frequency){
     top: 0;
     border: 2px solid black;
     box-sizing: border-box;
+    overflow: hidden;
+    z-index: 0;
+}
+.band:hover {
+    min-width: 200px !important;
+    background-color: red;
+    z-index: 1;
 }
 .tick {
     width: auto !important;
