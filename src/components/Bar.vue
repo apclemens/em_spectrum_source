@@ -14,6 +14,9 @@
         </div>
         <Markings 
              v-if="scale != '3'"
+             v-bind:centerPos="centerPositions[scale]"
+             v-bind:centerFrequencyRange="centerFrequencyRanges[scale]"
+             v-bind:markings="markings"
         />
     </div>
 </template>
@@ -26,7 +29,7 @@ import ClassList from './ClassList.vue'
 
 export default {
     name: 'Bar',
-    props: ['scale', 'centerPositions'],
+    props: ['scale', 'centerPositions', 'centerFrequencyRanges'],
     components: {
         Preview,
         Guider,
@@ -36,12 +39,22 @@ export default {
     data() {
         return {
             leftPos: 0,
+            markings: [0,0,0,0,0,0,0,0,0,0,0],
+            placements: [0,0,0,0,0,0,0,0,0,0,0],
         }
     },
     methods: {
         movePreview: function(event) {
             this.leftPos = event.x - .045*window.innerWidth;
             this.$emit('updatePositions', this.leftPos);
+
+            for (var i=0; i<11; i++) {
+                var newValue = this.pos_to_freq(this.centerFrequencyRanges[this.scale][0], this.centerFrequencyRanges[this.scale][1], this.centerPositions[this.scale]+0.1*i);
+                this.markings.splice(i, 1, newValue)
+            }
+        },
+        pos_to_freq: function(startFreq, endFreq, pos) {
+            return startFreq**(1-pos) * endFreq ** pos;
         }
     },
 }

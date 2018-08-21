@@ -7,8 +7,8 @@
             </div>
         </div>
         <div v-else class="hertz">
-            <div v-for="n in 11" class="mark" v-bind:key=n>
-                {{n}}
+            <div v-for="(n, index) in markings" class="mark" v-bind:key=index>
+                {{n.toExponential(2)}}
             </div>
         </div>
     </div>
@@ -17,10 +17,15 @@
 <script>
 export default {
     name: 'Markings',
-    props: ['scale', 'markingList'],
+    props: ['scale', 'centerPos', 'centerFrequencyRange', 'markings', 'placements'],
     methods: {
+        pos_to_freq: function(startFreq, endFreq, pos) {
+            return startFreq**(1-pos) * endFreq ** pos;
+        }
     },
 }
+
+
 </script>
 
 <style>
