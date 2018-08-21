@@ -275,31 +275,31 @@
     "title": "SCADA, alarm monitoring, meter reading systems and other narrowband services for a company internal use",
     "start": 928e6,
     "end": 929e6,
-    "bar": 2
+    "bar": 3
   },
   {
     "title": "Pagers",
     "start": 929e6,
     "end": 930e6,
-    "bar": 2
+    "bar": 3
   },
   {
     "title": "Narrowband PCS: commercial narrowband mobile services",
     "start": 930e6,
     "end": 931e6,
-    "bar": 2
+    "bar": 3
   },
   {
     "title": "Pagers",
     "start": 931e6,
     "end": 932e6,
-    "bar": 2
+    "bar": 3
   },
   {
     "title": "Fixed microwave services: distribution of video, audio and other data",
     "start": 932e6,
     "end": 935e6,
-    "bar": 2
+    "bar": 3
   },
   {
     "title": "Commercial 2-way radio",
@@ -311,7 +311,7 @@
     "title": "Narrowband PCS: commercial narrowband mobile services",
     "start": 940e6,
     "end": 941e6,
-    "bar": 2
+    "bar": 3
   },
   {
     "title": "Mixed studio-transmitter fixed links, SCADA, other.",
