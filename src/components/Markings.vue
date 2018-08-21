@@ -2,12 +2,12 @@
     <div class="markings">
         <span class="label">Hz</span>
         <div v-if="scale == 0" class="hertz">
-            <div v-for="n in 11" class="mark" v-bind:key=n>
+            <div v-for="n in 11" class="mark" v-bind:key=n v-bind:style="{left: ((n-1)*8)+'%'}">
                 3e{{2*n-2}}
             </div>
         </div>
         <div v-else class="hertz">
-            <div v-for="(n, index) in markings" class="mark" v-bind:key=index>
+            <div v-for="(n, index) in markings" class="mark" v-bind:key=index v-bind:style="{left: ((index)*8)+'%'}">
                 {{n.toExponential(2)}}
             </div>
         </div>
@@ -43,10 +43,9 @@ export default {
 .hertz {
     width: 90%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
 }
 .mark {
     display: inline-block;
+    position: relative;
 }
 </style>

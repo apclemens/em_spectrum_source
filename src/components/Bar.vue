@@ -5,7 +5,6 @@
         <Preview v-bind:leftPos="leftPos"/>
         <div class="between">
         <Guider
-             v-if="scale != '3'"
              v-bind:leftPos="leftPos"
         />
         <ClassList
@@ -13,7 +12,6 @@
          />
         </div>
         <Markings 
-             v-if="scale != '3'"
              v-bind:centerPos="centerPositions[scale]"
              v-bind:centerFrequencyRange="centerFrequencyRanges[scale]"
              v-bind:markings="markings"
