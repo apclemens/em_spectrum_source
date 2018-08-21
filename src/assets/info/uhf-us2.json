@@ -1,5 +1,17 @@
 {"uhfus": [
   {
+    "title": "Used for pipeline inspections gauges (PIGs) to determine location of gauge inside a pipeline",
+    "start": 22,
+    "end": 22,
+    "bar": 3
+  },
+  {
+    "title": "Fundamental Schumann resonance, frequency at which the wavelength equals the circumference of the Earth",
+    "start": 7.83,
+    "end": 7.83,
+    "bar": 3
+  },
+  {
     "title": "Super low frequency (SLF): Because of the extreme difficulty of building transmitters that can generate such long waves, frequencies in this range have been used in very few artificial communication systems. However, SLF waves can penetrate seawater to a depth of hundreds of meters. Therefore, in recent decades the U.S., Russian and Indian military have built huge radio transmitters using SLF frequencies to communicate with their submarines.",
     "start": 30,
     "end": 300,
