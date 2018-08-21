@@ -4,12 +4,15 @@
         <img id="visible-preview" v-if="scale == '0'" src="./../assets/visible.png">
         <Preview v-bind:leftPos="leftPos"/>
         <div class="between">
-        <Guider
-             v-bind:leftPos="leftPos"
-        />
-        <ClassList
-             v-if="scale == '0'"
-         />
+            <Guider
+                 v-bind:leftPos="leftPos"
+            />
+            <ClassList
+                 v-if="scale == '0'"
+             />
+            <Information
+                 v-else
+             />
         </div>
         <Markings 
              v-bind:centerPos="centerPositions[scale]"
@@ -25,6 +28,7 @@ import Preview from './Preview.vue'
 import Guider from './Guider.vue'
 import Markings from './Markings.vue'
 import ClassList from './ClassList.vue'
+import Information from './Information.vue'
 
 export default {
     name: 'Bar',
@@ -34,6 +38,7 @@ export default {
         Guider,
         Markings,
         ClassList,
+        Information,
     },
     data() {
         return {
@@ -64,7 +69,6 @@ export default {
         },
         movePreviewWithoutUpdating: function(A, B, freq) {
             this.leftPos = this.freq_to_pos(A, B, freq) * 0.9*window.innerWidth;
-            console.log(this.leftPos);
         },
     },
 }

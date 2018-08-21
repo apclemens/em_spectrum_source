@@ -1,4 +1,4 @@
-data = [
+uhfus = [
   {
     'title': 'Government use, including meteorology, military aviation, and federal two-way use',
     'start': 225e6,
