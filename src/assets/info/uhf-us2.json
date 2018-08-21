@@ -1,5 +1,11 @@
 {"uhfus": [
   {
+    "title": "Ultra high frequency (UHF): used for television broadcasting, cell phones, satellite communication including GPS, personal radio services including Wi-Fi and Bluetooth, walkie-talkies, cordless phones, and numerous other applications.",
+    "start": 300e6,
+    "end": 3e9,
+    "bar": 1
+  },
+  {
     "title": "Government use, including meteorology, military aviation, and federal two-way use",
     "start": 225e6,
     "end": 420e6,
