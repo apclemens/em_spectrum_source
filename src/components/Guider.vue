@@ -29,10 +29,10 @@ export default {
     z-index: -1;
 }
 .box1 {
-    background: linear-gradient(to top left, #fff calc(50% - 1px), #aaa, #fff calc(50% + 1px) );
+    background: linear-gradient(to top left, #fff calc(50% - 1px), #aaa, #d4d4d4 calc(50% + 1px) );
 }
 .box2 {
     right: 0;
-    background: linear-gradient(to top right, #fff calc(50% - 1px), #aaa, #fff calc(50% + 1px) );
+    background: linear-gradient(to top right, #fff calc(50% - 1px), #aaa, #d4d4d4 calc(50% + 1px) );
 }
 </style>
