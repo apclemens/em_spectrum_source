@@ -1,5 +1,11 @@
 {"uhfus": [
   {
+    "title": "Resulting ray from electron-positron annihilation (if both start at rest)",
+    "start": 1.24e20,
+    "end": 1.24e20,
+    "bar": 2
+  },
+  {
     "title": "Station Tests and transatlantic reception window",
     "start": 135.7e3,
     "end": 136e3,
