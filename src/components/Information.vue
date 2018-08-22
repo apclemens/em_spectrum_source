@@ -1,12 +1,14 @@
 <template>
     <div class="information" v-bind:style="{transform: 'translateX('+translate+'%)'}">
-        <div class="band" v-for="band in information" v-bind:class="{tick: band.start == band.end}"
+        <div class="band" v-for="(band, index) in information" v-bind:class="{tick: band.start == band.end}" v-bind:key="index"
             v-bind:style="{
                  left: frequency_to_position_information(band.start, scale)*90 + '%',
                  width: (frequency_to_position_information(band.end, scale)*90 - frequency_to_position_information(band.start, scale)*90) + '%'
             }"
         >
-            {{band.title}}
+            <div class="info">
+                {{band.title}}
+            </div>
         </div>
     </div>
 </template>
@@ -24,7 +26,7 @@ export default {
         frequency_to_position_information: function(frequency, scale) {
             return Math.log10(frequency/3)/20 * 10**scale;
         },
-        move: function(A, B, freq) {
+        move: function(A) {
             this.translate = Math.log10(A/3)/20 * 10**this.scale * (-90);
         }
     },
@@ -65,7 +67,7 @@ function frequencyToRGB(frequency){
         Red = 0.0;
         Green = 0.0;
         Blue = 0.0;
-    };
+    }
 
     if((Wavelength >= 380) && (Wavelength<420)){
         factor = 0.3 + 0.7*(Wavelength - 380) / (420 - 380);
@@ -75,7 +77,7 @@ function frequencyToRGB(frequency){
         factor = 0.3 + 0.7*(780 - Wavelength) / (780 - 700);
     }else{
         factor = 0.0;
-    };
+    }
 
 
     var rgb = [0,0,0];
@@ -106,11 +108,21 @@ function frequencyToRGB(frequency){
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
+    height: 30px;
 }
 .band:hover {
+    overflow: visible;
+}
+.band:hover .info {
+    transform: translateY(-100%);
+    margin: auto;
+    position: relative;
     min-width: 200px !important;
     background-color: red;
     z-index: 1;
+}
+.info {
+    pointer-events: none;
 }
 .tick {
     width: auto !important;

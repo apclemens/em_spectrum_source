@@ -3,73 +3,79 @@
         <table>
             <tr>
                 <td width="5%">
-                    Extremely low frequency
+                    <span>Extremely low frequency</span>
                     <img src="./../assets/elf.jpg">
                 </td>
                 <td width="5%">
-                    Super low frequency
+                    <span>Super low frequency</span>
                     <img src="./../assets/slf.svg">
                 </td>
                 <td width="5%">
-                    Ultra low frequency
+                    <span>Ultra low frequency</span>
                     <img src="./../assets/ulf.png">
                 </td>
                 <td width="5%">
-                    Very low frequency
+                    <span>Very low frequency</span>
+                    <img src="./../assets/vlf.png">
                 </td>
                 <td width="5%">
-                    Low frequency
+                    <span>Low frequency</span>
+                    <img src="./../assets/lf.png">
                 </td>
                 <td width="5%">
-                    Medium frequency
+                    <span>Medium frequency</span>
                     <img src="./../assets/mf.png">
                 </td>
                 <td width="5%">
-                    High frequency
+                    <span>High frequency</span>
+                    <img src="./../assets/hf.png">
                 </td>
                 <td width="5%">
-                    Very high frequency
+                    <span>Very high frequency</span>
                     <img src="./../assets/vhf.png">
                 </td>
                 <td width="5%">
-                    Ultra high frequency
+                    <span>Ultra high frequency</span>
                     <img src="./../assets/uhf.png">
                 </td>
                 <td width="5%">
-                    Super high frequency
+                    <span>Super high frequency</span>
                     <img src="./../assets/shf.png">
                 </td>
                 <td width="5%">
-                    Extremely high frequency
+                    <span>Extremely high frequency</span>
+                    <img src="./../assets/ehf.jpg">
                 </td>
                 <td width="5%">
-                    Far infrared
+                    <span>Far infrared</span>
                     <img src="./../assets/fi.png">
                 </td>
                 <td width="5%">
-                    Mid infrared
+                    <span>Mid infrared</span>
                     <img src="./../assets/mi.jpg">
                 </td>
                 <td width="5%">
-                    Near infrared
+                    <span>Near infrared</span>
                     <img src="./../assets/ni.png">
                 </td>
                 <td width="5%">
-                    Near ultraviolet
+                    <span>Near ultraviolet</span>
+                    <img src="./../assets/nu.png">
                 </td>
                 <td width="5%">
-                    Extreme ultraviolet
+                    <span>Extreme ultraviolet</span>
                     <img src="./../assets/eu.png">
                 </td>
                 <td width="5%">
-                    Soft X-rays
+                    <span>Soft X-rays</span>
+                    <img src="./../assets/sx.png">
                 </td>
                 <td width="5%">
-                    Hard X-rays
+                    <span>Hard X-rays</span>
                     <img src="./../assets/hx.png">
                 </td>
                 <td width="5%">
-                    Gamma rays
+                    <span>Gamma rays</span>
                     <img src="./../assets/gr.png">
                 </td>
             </tr>
@@ -89,7 +95,20 @@ export default {
     width: 100%;
     height: 100%;
 }
-table img {
+.classlist table {
+    height: 100%;
     width: 100%;
+}
+.classlist td {
+    position: relative;
+}
+.classlist td img {
+    position: absolute;
+    width: 100%;
+    bottom: 15%;;
+}
+.classlist td span {
+    position: absolute;
+    top: 0;
 }
 </style>

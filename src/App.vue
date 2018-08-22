@@ -27,14 +27,11 @@ export default {
           var status = xhr.status;
           if (status === 200) {
               var data = xhr.response.uhfus;
-              console.log(data);
               var band;
               for (var i=0; i<data.length; i++) {
                   band = data[i];
                   ths.information[band.bar].push(band);
               }
-          } else {
-              console.log(xhr.response);
           }
       };
       xhr.send();
