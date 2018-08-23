@@ -14,12 +14,11 @@ export default {
 
 <style>
 .preview {
-    height: 150px;
+    height: 25px;
     background-color: rgba(0,0,255,.35);
     width: 10%;
     position: absolute;
-    margin-top: -10px;
-    pointer-events: none;
+    margin-top: -27px;
     border-left: 2px solid black;
     border-right: 2px solid black;
 }

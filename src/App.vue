@@ -74,6 +74,7 @@ function pos_to_freq(startFreq, endFreq, pos) {
 <style>
 body {
     margin: 0;
+    overflow: hidden;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

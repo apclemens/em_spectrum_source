@@ -85,8 +85,8 @@ export default {
 .bar {
     position: relative;
     width: 90%;
-    height: 5px;
-    background-color: black;
+    height: 25px;
+    border: 2px solid black;
     margin: auto;
 }
 .between {
