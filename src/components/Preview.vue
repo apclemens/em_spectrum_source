@@ -1,6 +1,8 @@
 <template>
     <div class="preview"
+         v-on:mousedown="mouseDown"
          v-bind:style="{left: leftPos + 'px'}"
+         v-bind:class="{moving: moving != 0}"
         >
     </div>
 </template>
@@ -8,7 +10,12 @@
 <script>
 export default {
     name: 'Preview',
-    props: ['leftPos'],
+    props: ['leftPos', 'moving'],
+    methods: {
+        mouseDown: function(event) {
+            this.$emit("mouseDown", event);
+        }
+    },
 }
 </script>
 
@@ -21,5 +28,9 @@ export default {
     margin-top: -27px;
     border-left: 2px solid black;
     border-right: 2px solid black;
+    cursor: grab;
+}
+.preview.moving {
+    cursor: grabbing;
 }
 </style>

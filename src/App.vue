@@ -1,10 +1,10 @@
 <template>
   <div id="app">
       <Markings scale="0"/>
-    <Bar ref="0" scale="0" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[0]" v-on:updatePositions="updatePos($event, 0)"/>
-    <Bar ref="1" scale="1" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[1]" v-on:updatePositions="updatePos($event, 1)"/>
-    <Bar ref="2" scale="2" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[2]" v-on:updatePositions="updatePos($event, 2)"/>
-    <Bar ref="3" scale="3" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[3]" v-on:updatePositions="updatePos($event, 3)"/>
+    <Bar ref="0" scale="0" v-on:mouseDown="mouseDown(0)" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[0]" v-on:updatePositions="updatePos($event, 0)"/>
+    <Bar ref="1" scale="1" v-on:mouseDown="mouseDown(1)" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[1]" v-on:updatePositions="updatePos($event, 1)"/>
+    <Bar ref="2" scale="2" v-on:mouseDown="mouseDown(2)" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[2]" v-on:updatePositions="updatePos($event, 2)"/>
+    <Bar ref="3" scale="3" v-on:mouseDown="mouseDown(3)" v-bind:centerPositions="centerPositions" v-bind:centerFrequencyRanges="centerFrequencyRanges" v-bind:information="information[3]" v-on:updatePositions="updatePos($event, 3)"/>
   </div>
 </template>
 
@@ -19,8 +19,20 @@ export default {
     Markings,
   },
   mounted() {
-      var xhr = new XMLHttpRequest();
       var ths = this;
+
+      document.addEventListener('mouseup', function() {
+          this.moving = -1;
+          for(var ref=0; ref < 4; ref++) {
+              ths.$refs[ref].mouseUp();
+          }
+      })
+      document.addEventListener('mousemove', function(event) {
+          if (ths.moving == -1) return;
+          ths.$refs[ths.moving].movePreview(event);
+      })
+
+      var xhr = new XMLHttpRequest();
       xhr.open('GET', 'https://rawgit.com/apclemens/em_spectrum_source/master/src/assets/info/uhf-us2.json', true);
       xhr.responseType = 'json';
       xhr.onload = function() {
@@ -38,12 +50,16 @@ export default {
   },
   data() {
       return {
+          moving: -1,
           centerPositions: [0, 0, 0, 0],
           centerFrequencyRanges: [[3e-1, 3e1], [1, 1], [1, 1], [1, 1]],
           information: [[],[],[],[]],
       }
   },
   methods: {
+      mouseDown: function(i) {
+          this.moving = i;
+      },
       updatePos: function(event, scale) {
           this.centerPositions[scale] = event / (0.9 * window.innerWidth);
           if (scale == 0) {

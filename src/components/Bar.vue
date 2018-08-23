@@ -1,9 +1,11 @@
 <template>
-    <div class="bar-container" v-on:mousemove="movePreview">
-        <div class="bar">
-                 </div>
+    <div class="bar-container" v-bind:class="{moving: moving != 0}">
+        <div class="bar"
+             v-on:mousedown="mouseDown"
+            >
+        </div>
         <img id="visible-preview" v-if="scale == '0'" src="./../assets/visible.png">
-        <Preview v-if="scale != '3'" v-bind:leftPos="leftPos"/>
+        <Preview v-bind:moving="moving" v-on:mouseDown="mouseDown" v-if="scale != '3'" v-bind:leftPos="leftPos"/>
         <div class="between" v-on:scroll="">
             <Guider
                  v-if="scale != '3'"
@@ -20,7 +22,7 @@
              />
         </div>
         <Markings 
-                 v-if="scale != '3'"
+             v-if="scale != '3'"
              v-bind:centerPos="centerPositions[scale]"
              v-bind:centerFrequencyRange="centerFrequencyRanges[scale]"
              v-bind:markings="markings"
@@ -48,14 +50,32 @@ export default {
     },
     data() {
         return {
+            moving: 0,
             leftPos: 0,
             markings: [0,0,0,0,0,0,0,0,0,0,0],
             placements: [0,0,0,0,0,0,0,0,0,0,0],
         }
     },
     methods: {
+        mouseUp: function() {
+            this.moving = 0;
+        },
+        mouseDown: function(event) {
+            event.preventDefault();
+            this.$emit('mouseDown');
+            switch (event.target.className) {
+                case 'bar': 
+                    this.moving = window.innerWidth*.045;
+                    this.movePreview(event);
+                    break;
+                case 'preview':
+                    this.moving = event.layerX;
+                    break;
+            }
+        },
         movePreview: function(event) {
-            this.leftPos = event.x - .045*window.innerWidth;
+            if(!this.moving) return;
+            this.leftPos = event.x - this.moving;
             this.$emit('updatePositions', this.leftPos);
 
             var A = this.centerFrequencyRanges[this.scale][0];
@@ -82,12 +102,16 @@ export default {
 </script>
 
 <style>
+.bar-container.moving {
+    cursor: grabbing;
+}
 .bar {
     position: relative;
     width: 90%;
     height: 25px;
     border: 2px solid black;
     margin: auto;
+    cursor: pointer;
 }
 .between {
     position: relative;
