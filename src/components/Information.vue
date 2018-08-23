@@ -27,7 +27,7 @@ export default {
             return Math.log10(frequency/3)/20 * 10**scale;
         },
         move: function(A) {
-            this.translate = Math.log10(A/3)/20 * 10**this.scale * (-90);
+            this.translate = Math.log10(A/3)/20 * 10**this.scale * (-100);
         }
     },
 }
