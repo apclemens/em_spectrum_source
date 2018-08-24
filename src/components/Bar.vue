@@ -5,7 +5,7 @@
             >
         </div>
         <Preview v-bind:moving="moving" v-on:mouseDown="mouseDown" v-if="scale != '3'" v-bind:leftPos="leftPos"/>
-        <div class="between" v-scroll="onScroll">
+        <div class="between">
             <Guider
                  v-if="scale != '3'"
                  v-bind:leftPos="leftPos"
@@ -56,9 +56,6 @@ export default {
         }
     },
     methods: {
-        onScroll: function(event) {
-            console.log(event);
-        },
         mouseUp: function() {
             this.moving = 0;
         },
