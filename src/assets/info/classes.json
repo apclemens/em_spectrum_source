@@ -81,12 +81,12 @@
   {
     "title": "Near infrared",
     "start": 214e12,
-    "end": 400e12,
+    "end": 430e12,
     "bar": 1
   },
   {
     "title": "Near ultraviolet",
-    "start": 400e12,
+    "start": 430e12,
     "end": 2.418e15,
     "bar": 1
   },

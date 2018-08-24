@@ -4,7 +4,6 @@
              v-on:mousedown="mouseDown"
             >
         </div>
-            <!--<img id="visible-preview" v-if="scale == '0'" src="./../assets/visible.png">-->
         <Preview v-bind:moving="moving" v-on:mouseDown="mouseDown" v-if="scale != '3'" v-bind:leftPos="leftPos"/>
         <div class="between">
             <Guider
@@ -94,7 +93,7 @@ export default {
             return Math.log10(freq/startFreq) / Math.log10(endFreq/startFreq);
         },
         movePreviewWithoutUpdating: function(A, B, freq) {
-            this.leftPos = this.freq_to_pos(A, B, freq) * 0.9*window.innerWidth;
+            this.leftPos = this.freq_to_pos(A, B, freq) * .9*window.innerWidth + .045*window.innerWidth;
             this.$refs['info'].move(A);
         },
     },

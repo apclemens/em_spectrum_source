@@ -10,8 +10,8 @@
         </div>
         <div class="band" v-for="(band, index) in information" v-bind:class="{tick: band.start == band.end}" v-bind:key="index"
             v-bind:style="{
-                 left: frequency_to_position_information(band.start, scale)*90 + '%',
-                 width: (frequency_to_position_information(band.end, scale)*90 - frequency_to_position_information(band.start, scale)*90) + '%'
+                 left: frequency_to_position_information(band.start, scale)*100 + '%',
+                 width: (frequency_to_position_information(band.end, scale)*100 - frequency_to_position_information(band.start, scale)*100) + '%'
             }"
         >
             <div class="info">
@@ -35,7 +35,7 @@ export default {
             return Math.log10(frequency/3)/20 * 10**scale;
         },
         move: function(A) {
-            this.translate = Math.log10(A/3)/20 * 10**this.scale * (-90);
+            this.translate = Math.log10(A/3)/20 * 10**this.scale * (-100);
         }
     },
 }
