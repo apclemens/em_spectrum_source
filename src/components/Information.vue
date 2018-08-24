@@ -112,9 +112,9 @@ function frequencyToRGB(frequency){
 }
 .band:hover {
     overflow: visible;
+    z-index: 2;
 }
 .band:hover .info {
-    transform: translateY(-100%);
     margin: auto;
     position: relative;
     min-width: 200px !important;
