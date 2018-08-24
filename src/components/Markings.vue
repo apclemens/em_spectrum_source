@@ -9,9 +9,9 @@
             </div>
         </div>
         <div v-else class="hertz">
-            <div v-for="(n, index) in markings" class="mark" v-bind:key=index v-bind:style="{left: (placements[index]*100)+'%'}">
+            <div v-for="n in 11" class="mark" v-bind:key=n v-bind:style="{left: (placements[n-1])*100+'%'}">
                 <div>
-                {{n.toExponential(2).replace('e+', 'e')}}
+                {{markings[n-1].toExponential(2).replace('e+', 'e')}}
                 </div>
             </div>
         </div>
@@ -44,7 +44,10 @@ export default {
 .label {
     display: inline-block;
     position: absolute;
-    right: 10px;
+    right: 0;
+    padding: 0 10px;
+    background-color: white;
+    z-index: 2;
 }
 .hertz {
     width: 90%;

@@ -50,7 +50,7 @@ export default {
     data() {
         return {
             moving: 0,
-            leftPos: 0,
+            leftPos: window.innerWidth * 0.045,
             markings: [0,0,0,0,0,0,0,0,0,0,0],
             placements: [0,0,0,0,0,0,0,0,0,0,0],
         }

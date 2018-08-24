@@ -34,10 +34,11 @@ export default {
       })
   },
   data() {
+      var centerPos = window.innerWidth * 0.045;
       return {
           moving: -1,
-          centerPositions: [0, 0, 0, 0],
-          centerFrequencyRanges: [[3e-1, 3e1], [1, 1], [1, 1], [1, 1]],
+          centerPositions: [centerPos, centerPos, centerPos, centerPos],
+          centerFrequencyRanges: [[3e0, 3e2], [3e0, 3e1], [1, 1], [1, 1]],
           information: BandInfo.data().information,
       }
   },
