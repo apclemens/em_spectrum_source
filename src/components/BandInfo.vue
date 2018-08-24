@@ -11,7 +11,10 @@ export default {
     name: 'BandInfo',
     data() {
         var info = [[], [], [], []];
-        var jsons = [UHF_US, Classes];
+        var jsons = [
+            UHF_US,
+            Classes,
+        ];
         var band;
         for (var i=0; i<jsons.length; i++) {
             var json = jsons[i];
