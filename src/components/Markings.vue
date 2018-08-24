@@ -59,9 +59,13 @@ export default {
     width: 0;
     background-color: black;
     height: 100%;
+    border: 1px solid black;
+    margin: -1px;
 }
 .mark div {
     transform: translateX(-50%);
     display: inline-block;
+    font-size: 12px;
+    background-color: white;
 }
 </style>
