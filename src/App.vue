@@ -11,6 +11,7 @@
 <script>
 import Bar from './components/Bar.vue'
 import Markings from './components/Markings.vue'
+import BandInfo from './components/BandInfo.vue'
 
 export default {
   name: 'app',
@@ -32,28 +33,29 @@ export default {
           ths.$refs[ths.moving].movePreview(event);
       })
 
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'https://rawgit.com/apclemens/em_spectrum_source/master/src/assets/info/uhf-us2.json', true);
-      xhr.responseType = 'json';
-      xhr.onload = function() {
-          var status = xhr.status;
-          if (status === 200) {
-              var data = xhr.response.uhfus;
-              var band;
-              for (var i=0; i<data.length; i++) {
-                  band = data[i];
-                  ths.information[band.bar].push(band);
-              }
-          }
-      };
-      xhr.send();
+      console.log(this.bi);
+//      var xhr = new XMLHttpRequest();
+//      xhr.open('GET', 'https://rawgit.com/apclemens/em_spectrum_source/master/src/assets/info/uhf-us2.json', true);
+//      xhr.responseType = 'json';
+//      xhr.onload = function() {
+//          var status = xhr.status;
+//          if (status === 200) {
+//              var data = xhr.response.uhfus;
+//              var band;
+//              for (var i=0; i<data.length; i++) {
+//                  band = data[i];
+//                  ths.information[band.bar].push(band);
+//              }
+//          }
+//      };
+//      xhr.send();
   },
   data() {
       return {
           moving: -1,
           centerPositions: [0, 0, 0, 0],
           centerFrequencyRanges: [[3e-1, 3e1], [1, 1], [1, 1], [1, 1]],
-          information: [[],[],[],[]],
+          information: BandInfo.data().information,
       }
   },
   methods: {
