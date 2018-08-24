@@ -3,12 +3,16 @@
         <span class="label">Hz</span>
         <div v-if="scale == 0" class="hertz">
             <div v-for="n in 11" class="mark" v-bind:key=n v-bind:style="{left: ((n-1)*10)+'%'}">
-                &nbsp;3e{{2*n-2}}
+                <div>
+                3e{{2*n-2}}
+                </div>
             </div>
         </div>
         <div v-else class="hertz">
             <div v-for="(n, index) in markings" class="mark" v-bind:key=index v-bind:style="{left: (placements[index]*100)+'%'}">
-                &nbsp;{{n.toExponential(2).replace('e+', 'e')}}
+                <div>
+                {{n.toExponential(2).replace('e+', 'e')}}
+                </div>
             </div>
         </div>
     </div>
@@ -45,7 +49,6 @@ export default {
 .hertz {
     width: 90%;
     margin: auto;
-    overflow: hidden;
 }
 .mark {
     display: inline-block;
@@ -53,5 +56,9 @@ export default {
     width: 0;
     background-color: black;
     height: 100%;
+}
+.mark div {
+    transform: translateX(-50%);
+    display: inline-block;
 }
 </style>

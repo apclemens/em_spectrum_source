@@ -111,7 +111,8 @@ export default {
     position: relative;
     width: 90%;
     height: 25px;
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     margin: auto;
     cursor: pointer;
 }
