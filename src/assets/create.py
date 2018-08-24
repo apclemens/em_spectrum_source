@@ -1,7 +1,7 @@
 from freqToRGB import freqToRGB
 from PIL import Image, ImageDraw
 
-WIDTH = 500
+WIDTH = 2000
 
 img = Image.new('RGB', (WIDTH, 1), color='red')
 draw = ImageDraw.Draw(img)
