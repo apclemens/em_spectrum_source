@@ -8,7 +8,7 @@
         </div>
         <div v-else class="hertz">
             <div v-for="(n, index) in markings" class="mark" v-bind:key=index v-bind:style="{left: (placements[index]*100)+'%'}">
-                &nbsp;{{n.toExponential(2)}}
+                &nbsp;{{n.toExponential(2).replace('e+', 'e')}}
             </div>
         </div>
     </div>
@@ -29,7 +29,9 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 .markings {
+    font-family: 'Roboto Mono', monospace;
     position: absolute;
     height: 25px;
     width: 100%;
