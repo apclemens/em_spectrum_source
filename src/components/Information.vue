@@ -52,7 +52,7 @@ export default {
 .visible {
     position: absolute;
     background-size: 100%;
-    height: 100%;
+    height: calc(100% - 29px);
     background-image: url('./../assets/visible.png');
     background-repeat: repeat-y;
 }
