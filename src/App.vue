@@ -32,23 +32,6 @@ export default {
           if (ths.moving == -1) return;
           ths.$refs[ths.moving].movePreview(event);
       })
-
-      console.log(this.bi);
-//      var xhr = new XMLHttpRequest();
-//      xhr.open('GET', 'https://rawgit.com/apclemens/em_spectrum_source/master/src/assets/info/uhf-us2.json', true);
-//      xhr.responseType = 'json';
-//      xhr.onload = function() {
-//          var status = xhr.status;
-//          if (status === 200) {
-//              var data = xhr.response.uhfus;
-//              var band;
-//              for (var i=0; i<data.length; i++) {
-//                  band = data[i];
-//                  ths.information[band.bar].push(band);
-//              }
-//          }
-//      };
-//      xhr.send();
   },
   data() {
       return {

@@ -4,9 +4,9 @@
              v-on:mousedown="mouseDown"
             >
         </div>
-        <img id="visible-preview" v-if="scale == '0'" src="./../assets/visible.png">
+            <!--<img id="visible-preview" v-if="scale == '0'" src="./../assets/visible.png">-->
         <Preview v-bind:moving="moving" v-on:mouseDown="mouseDown" v-if="scale != '3'" v-bind:leftPos="leftPos"/>
-        <div class="between" v-on:scroll="">
+        <div class="between">
             <Guider
                  v-if="scale != '3'"
                  v-bind:leftPos="leftPos"
@@ -125,5 +125,10 @@ export default {
     left: 68.56075802%;
     height: 25px;
     transform: translateY(-50%);
+    pointer-events: none;
+}
+.visible_background {
+    background-image: url('./../assets/visible.png');
+    background-repeat: repeat-y;
 }
 </style>

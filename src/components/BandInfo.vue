@@ -10,7 +10,6 @@ import Classes from './../assets/info/classes.json'
 export default {
     name: 'BandInfo',
     data() {
-        var ths = this;
         var info = [[], [], [], []];
         var jsons = [UHF_US, Classes];
         var band;

@@ -1,5 +1,13 @@
 <template>
-    <div class="information" v-bind:style="{transform: 'translateX('+translate+'%)'}">
+    <div class="information" v-bind:style="{transform: 'translateX('+translate+'%)'}"
+    >
+        <div class="visible"
+             v-bind:style="{
+                left: 70.77313409838453*(10**scale) + '%',
+                width: (71.98825191232318*(10**scale) - 70.77313409838453*(10**scale)) + '%',
+             }"
+            >
+        </div>
         <div class="band" v-for="(band, index) in information" v-bind:class="{tick: band.start == band.end}" v-bind:key="index"
             v-bind:style="{
                  left: frequency_to_position_information(band.start, scale)*90 + '%',
@@ -32,64 +40,6 @@ export default {
     },
 }
 
-function frequencyToRGB(frequency){
-    var Wavelength = 299792458 / frequency;
-    var factor;
-    var Red,Green,Blue;
-    const Gamma = 0.8;
-    const IntensityMax = 255;
-
-    if((Wavelength >= 380) && (Wavelength<440)){
-        Red = -(Wavelength - 440) / (440 - 380);
-        Green = 0.0;
-        Blue = 1.0;
-    }else if((Wavelength >= 440) && (Wavelength<490)){
-        Red = 0.0;
-        Green = (Wavelength - 440) / (490 - 440);
-        Blue = 1.0;
-    }else if((Wavelength >= 490) && (Wavelength<510)){
-        Red = 0.0;
-        Green = 1.0;
-        Blue = -(Wavelength - 510) / (510 - 490);
-    }else if((Wavelength >= 510) && (Wavelength<580)){
-        Red = (Wavelength - 510) / (580 - 510);
-        Green = 1.0;
-        Blue = 0.0;
-    }else if((Wavelength >= 580) && (Wavelength<645)){
-        Red = 1.0;
-        Green = -(Wavelength - 645) / (645 - 580);
-        Blue = 0.0;
-    }else if((Wavelength >= 645) && (Wavelength<781)){
-        Red = 1.0;
-        Green = 0.0;
-        Blue = 0.0;
-    }else{
-        Red = 0.0;
-        Green = 0.0;
-        Blue = 0.0;
-    }
-
-    if((Wavelength >= 380) && (Wavelength<420)){
-        factor = 0.3 + 0.7*(Wavelength - 380) / (420 - 380);
-    }else if((Wavelength >= 420) && (Wavelength<701)){
-        factor = 1.0;
-    }else if((Wavelength >= 701) && (Wavelength<781)){
-        factor = 0.3 + 0.7*(780 - Wavelength) / (780 - 700);
-    }else{
-        factor = 0.0;
-    }
-
-
-    var rgb = [0,0,0];
-
-    // Don't want 0^x = 1 for x <> 0
-    rgb[0] = Red==0.0 ? 0 : Math.round(IntensityMax * Math.pow(Red * factor, Gamma));
-    rgb[1] = Green==0.0 ? 0 : Math.round(IntensityMax * Math.pow(Green * factor, Gamma));
-    rgb[2] = Blue==0.0 ? 0 : Math.round(IntensityMax * Math.pow(Blue * factor, Gamma));
-
-    return rgb;
-}
-
 </script>
 
 <style>
@@ -98,6 +48,13 @@ function frequencyToRGB(frequency){
     width: 100%;
     height: 100%;
     left: 0;
+}
+.visible {
+    position: absolute;
+    background-size: 100%;
+    height: 100%;
+    background-image: url('./../assets/visible.png');
+    background-repeat: repeat-y;
 }
 .band {
     position: absolute;
