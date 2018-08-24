@@ -1,5 +1,5 @@
 <template>
-    <div class="markings" v-bind:style="{transform: 'translateY('+(scale==0 ? 0 : -100)+'%)'}">
+    <div class="markings" v-bind:style="{transform: 'translateY('+(scale==0 ? '4px' : '-100%')+')'}">
         <span class="label">Hz</span>
         <div v-if="scale == 0" class="hertz">
             <div v-for="n in 11" class="mark" v-bind:key=n v-bind:style="{left: ((n-1)*10)+'%'}">
