@@ -73,13 +73,23 @@ function pos_to_freq(startFreq, endFreq, pos) {
 </script>
 
 <style>
+#title {
+    height: 10%;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
 body {
     margin: 0;
     overflow: hidden;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  color: #2c3e50;
-  margin-top: 60px;
+    height: 90%;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    color: #2c3e50;
 }
 </style>

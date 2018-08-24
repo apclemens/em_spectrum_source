@@ -5,7 +5,7 @@
             >
         </div>
         <Preview v-bind:moving="moving" v-on:mouseDown="mouseDown" v-if="scale != '3'" v-bind:leftPos="leftPos"/>
-        <div class="between">
+        <div class="between" v-scroll="onScroll">
             <Guider
                  v-if="scale != '3'"
                  v-bind:leftPos="leftPos"
@@ -56,6 +56,9 @@ export default {
         }
     },
     methods: {
+        onScroll: function(event) {
+            console.log(event);
+        },
         mouseUp: function() {
             this.moving = 0;
         },
@@ -101,6 +104,9 @@ export default {
 </script>
 
 <style>
+.bar-container {
+    height: 25%;
+}
 .bar-container.moving {
     cursor: grabbing;
 }
@@ -114,7 +120,7 @@ export default {
 }
 .between {
     position: relative;
-    height: 200px;
+    height: 100%;
     width: 90%;
     margin: auto;
 }
