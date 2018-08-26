@@ -56,6 +56,9 @@ export default {
     background-image: url('./../assets/visible.png');
     background-repeat: repeat-y;
 }
+.small-visible {
+    background-image: url('./../assets/visible-small.png');
+}
 .band {
     position: absolute;
     display: inline-block;

@@ -4,7 +4,7 @@
              v-on:mousedown="mouseDown"
             >
         </div>
-        <Preview v-bind:moving="moving" v-on:mouseDown="mouseDown" v-if="scale != '3'" v-bind:leftPos="leftPos"/>
+        <Preview v-bind:moving="moving" v-on:mouseDown="mouseDown" v-if="scale != '3'" v-bind:leftPos="leftPos" />
         <div class="between">
             <Guider
                  v-if="scale != '3'"
@@ -64,11 +64,13 @@ export default {
             this.$emit('mouseDown');
             switch (event.target.className) {
                 case 'bar': 
-                    this.moving = window.innerWidth*.045;
+                case 'preview onLeft': 
+                case 'preview onRight': 
+                    this.moving = window.innerWidth*.045 + 2;
                     this.movePreview(event);
                     break;
                 case 'preview':
-                    this.moving = event.layerX;
+                    this.moving = event.layerX + .005*window.innerWidth - 2;
                     break;
             }
         },

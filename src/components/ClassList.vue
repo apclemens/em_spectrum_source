@@ -1,5 +1,6 @@
 <template>
     <div class="classlist">
+        <div class="visible small-visible" style="left: 70.77313409838453%; width: 1.2151178139386474%"></div>
         <table>
             <tr>
                 <td width="5%">

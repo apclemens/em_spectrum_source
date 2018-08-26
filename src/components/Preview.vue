@@ -2,7 +2,7 @@
     <div class="preview"
          v-on:mousedown="mouseDown"
          v-bind:style="{left: leftPos + 'px'}"
-         v-bind:class="{moving: moving != 0}"
+         v-bind:class="{moving: moving != 0, onLeft: leftPosFrac() < 0, onRight: leftPosFrac() > .9}"
         >
     </div>
 </template>
@@ -14,7 +14,10 @@ export default {
     methods: {
         mouseDown: function(event) {
             this.$emit("mouseDown", event);
-        }
+        },
+        leftPosFrac: function() {
+            return this.leftPos / window.innerWidth;
+        },
     },
 }
 </script>
@@ -23,14 +26,31 @@ export default {
 .preview {
     height: 25px;
     background-color: rgba(0,0,255,.35);
-    width: 10%;
+    width: 9%;
     position: absolute;
     margin-top: -27px;
     border-left: 2px solid black;
     border-right: 2px solid black;
     cursor: grab;
+    transform: translateX(calc(.5vw - 2px));
+    transition: background-color .5s linear;
 }
 .preview.moving {
     cursor: grabbing;
+}
+.preview.onLeft {
+    left: 0 !important;
+    transform: none;
+    border: none;
+    background-image: linear-gradient(to right, rgba(0,0,255,.35), rgba(0,0,0,0));
+    background-color: unset;
+}
+.preview.onRight {
+    right: 0 !important;
+    transform: none;
+    border: none;
+    left: unset !important;
+    background-image: linear-gradient(to left, rgba(0,0,255,.35), rgba(0,0,0,0));
+    background-color: unset;
 }
 </style>

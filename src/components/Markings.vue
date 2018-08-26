@@ -1,6 +1,7 @@
 <template>
     <div class="markings" v-bind:style="{transform: 'translateY('+(scale==0 ? '4px' : '-100%')+')'}">
-        <span class="label">Hz</span>
+        <span v-if="scale == 0" class="label">Hz</span>
+        <span v-else class="label">{{prefixes[Math.floor(Math.log10(markings[0])/3)]}}Hz</span>
         <div v-if="scale == 0" class="hertz">
             <div v-for="n in 11" class="mark" v-bind:key=n v-bind:style="{left: ((n-1)*10)+'%'}">
                 <div>
@@ -11,7 +12,7 @@
         <div v-else class="hertz">
             <div v-for="n in 11" class="mark" v-bind:key=n v-bind:style="{left: (placements[n-1])*100+'%'}">
                 <div>
-                {{markings[n-1].toExponential(2).replace('e+', 'e')}}
+                {{Math.round(markings[n-1] / 10**(Math.floor(Math.log10(markings[0])/3)*3),2)}}
                 </div>
             </div>
         </div>
@@ -22,6 +23,12 @@
 export default {
     name: 'Markings',
     props: ['scale', 'centerPos', 'centerFrequencyRange', 'markings', 'placements'],
+    data() {
+        return {
+            label: 'Hz',
+            prefixes: ['', 'k', 'M', 'G', 'T', 'P', 'E'],
+        }
+    },
     methods: {
         pos_to_freq: function(startFreq, endFreq, pos) {
             return startFreq**(1-pos) * endFreq ** pos;

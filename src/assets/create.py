@@ -1,7 +1,7 @@
 from freqToRGB import freqToRGB
 from PIL import Image, ImageDraw
 
-WIDTH = 2000
+WIDTH = 200
 
 img = Image.new('RGB', (WIDTH, 1), color='red')
 draw = ImageDraw.Draw(img)
@@ -11,4 +11,4 @@ for x in range(WIDTH):
     freq = startFreq**((WIDTH-x)/WIDTH) * endFreq**(x/WIDTH)
     draw.point((x,0), fill=freqToRGB(freq))
 
-img.save('visible.png', 'png')
+img.save('visible-small.png', 'png')

@@ -74,12 +74,10 @@ function pos_to_freq(startFreq, endFreq, pos) {
 </script>
 
 <style>
-#title {
-    height: 10%;
-    text-align: center;
-}
 h1 {
     margin: 0;
+    height: 10%;
+    text-align: center;
 }
 html, body {
     height: 100%;
