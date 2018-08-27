@@ -39,14 +39,10 @@ export default {
             return -90*(startPos + this.translate);
         },
         frequency_to_position_information: function(frequency, scale) {
-            if (frequency == 535e3) {
-                console.log(Math.log10(frequency/3)/20 * 10**scale);
-            }
             return Math.log10(frequency/3)/20 * 10**scale;
         },
         move: function(A) {
             this.translate = Math.log10(A/3)/20 * 10**this.scale * (-1);
-            console.log(this.translate);
         }
     },
 }
