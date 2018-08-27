@@ -82,10 +82,13 @@ export default {
             var A = this.centerFrequencyRanges[this.scale][0];
             var B = this.centerFrequencyRanges[this.scale][1];
 
+            var quotient = 10**(Math.floor(Math.log10(A)/3)*3);
             for (var i=0; i<11; i++) {
                 var newValue = this.pos_to_freq(A, B, 0.1*i);
                 this.markings.splice(i, 1, newValue)
-                this.placements.splice(i, 1, this.freq_to_pos(A, B, newValue.toExponential(2)));
+                this.placements.splice(i, 1, this.freq_to_pos(A, B,
+                    (newValue / quotient).toFixed(2) * quotient
+                ));
             }
         },
         pos_to_freq: function(startFreq, endFreq, pos) {
