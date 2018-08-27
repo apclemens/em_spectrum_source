@@ -11,7 +11,8 @@
         <div class="band" v-for="(band, index) in information" v-bind:class="{tick: band.start == band.end}" v-bind:key="index"
             v-bind:style="{
                  left: frequency_to_position_information(band.start, scale)*100 + '%',
-                 width: (frequency_to_position_information(band.end, scale)*100 - frequency_to_position_information(band.start, scale)*100) + '%'
+                 width: (frequency_to_position_information(band.end, scale)*100 - frequency_to_position_information(band.start, scale)*100) + '%',
+                 top: (29*band.row) + 'px'
             }"
         >
             <div class="info"
@@ -84,7 +85,7 @@ export default {
 .band:hover .info {
     margin: auto;
     position: relative;
-    min-width: 200px !important;
+    min-width: 0 !important;
     background-color: red;
     z-index: 1;
 }

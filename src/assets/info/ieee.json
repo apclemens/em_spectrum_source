@@ -1,0 +1,93 @@
+{"data": [
+    {
+        "title": "IEEE radar band HF",
+        "start": 0.003e9,
+        "end": 0.03e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band VHF",
+        "start": 0.03e9,
+        "end": 0.3e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band UHF",
+        "start": 0.3e9,
+        "end": 1e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band L",
+        "start": 1e9,
+        "end": 2e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band S",
+        "start": 2e9,
+        "end": 4e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band C",
+        "start": 4e9,
+        "end": 8e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band X",
+        "start": 8e9,
+        "end": 12e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band K_u",
+        "start": 12e9,
+        "end": 18e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band K",
+        "start": 18e9,
+        "end": 27e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band K_a",
+        "start": 27e9,
+        "end": 40e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band V",
+        "start": 40e9,
+        "end": 75e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band W",
+        "start": 75e9,
+        "end": 110e9,
+        "bar": 1,
+        "row": 2
+    },
+    {
+        "title": "IEEE radar band mm or G",
+        "start": 110e9,
+        "end": 300e9,
+        "bar": 1,
+        "row": 2
+    }
+]}
