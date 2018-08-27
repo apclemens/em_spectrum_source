@@ -12,7 +12,7 @@
         <div v-else class="hertz">
             <div v-for="n in 11" class="mark" v-bind:key=n v-bind:style="{left: (placements[n-1])*100+'%'}">
                 <div>
-                {{Math.round(markings[n-1] / 10**(Math.floor(Math.log10(markings[0])/3)*3),2)}}
+                {{(markings[n-1] / 10**(Math.floor(Math.log10(markings[0])/3)*3)).toFixed(2)}}
                 </div>
             </div>
         </div>
