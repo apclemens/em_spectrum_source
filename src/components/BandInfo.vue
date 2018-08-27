@@ -10,6 +10,7 @@ import NATO from './../assets/info/nato.json'
 import IEEE from './../assets/info/ieee.json'
 import TV from './../assets/info/tv_radio.json'
 import Optical from './../assets/info/optical.json'
+import UV from './../assets/info/uv.json'
 
 // https://www.ntia.doc.gov/files/ntia/publications/2003-allochrt.pdf
 
@@ -24,6 +25,7 @@ export default {
             IEEE,
             TV,
             Optical,
+            UV,
         ];
         var band;
         for (var i=0; i<jsons.length; i++) {
