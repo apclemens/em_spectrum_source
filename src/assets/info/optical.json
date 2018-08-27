@@ -1,0 +1,51 @@
+{"data": [
+    {
+        "title": "Optical communications",
+        "start": 1.79e14,
+        "end": 2.379e14,
+        "bar": 1,
+        "row": 1
+    },
+    {
+        "title": "Optical band U (ultralong wavelength)",
+        "start": 1.79e14,
+        "end": 1.845e14,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Optical band L (long wavelength)",
+        "start": 1.845e14,
+        "end": 1.916e14,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Optical band C (conventional, \"erbium window\")",
+        "start": 1.916e14,
+        "end": 1.959e14,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Optical band S (short wavelength)",
+        "start": 1.959e14,
+        "end": 2.053e14,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Optical band E (extended)",
+        "start": 2.053e14,
+        "end": 2.204e14,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Optical band O (original)",
+        "start": 2.204e14,
+        "end": 2.379e14,
+        "bar": 2,
+        "row": 0
+    }
+]}
