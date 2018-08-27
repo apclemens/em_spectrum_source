@@ -1,5 +1,5 @@
 <template>
-    <div class="information" v-bind:style="{transform: 'translateX('+translate+'%)'}"
+    <div class="information" v-bind:style="{transform: 'translateX('+(100*translate)+'%)'}"
     >
         <div class="visible"
              v-bind:style="{
@@ -14,7 +14,9 @@
                  width: (frequency_to_position_information(band.end, scale)*100 - frequency_to_position_information(band.start, scale)*100) + '%'
             }"
         >
-            <div class="info">
+            <div class="info"
+                 v-bind:style="{left: getLeftPos(band.start) + 'vw'}"
+            >
                 {{band.title}}
             </div>
         </div>
@@ -31,11 +33,20 @@ export default {
         }
     },
     methods: {
+        getLeftPos(startFreq) {
+            var startPos = this.frequency_to_position_information(startFreq, this.scale);
+            if (startPos + this.translate > 0) return 0;
+            return -90*(startPos + this.translate);
+        },
         frequency_to_position_information: function(frequency, scale) {
+            if (frequency == 535e3) {
+                console.log(Math.log10(frequency/3)/20 * 10**scale);
+            }
             return Math.log10(frequency/3)/20 * 10**scale;
         },
         move: function(A) {
-            this.translate = Math.log10(A/3)/20 * 10**this.scale * (-100);
+            this.translate = Math.log10(A/3)/20 * 10**this.scale * (-1);
+            console.log(this.translate);
         }
     },
 }
@@ -83,6 +94,8 @@ export default {
 }
 .info {
     pointer-events: none;
+    position: relative;
+    display: inline-block;
 }
 .tick {
     width: auto !important;
