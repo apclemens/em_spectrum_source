@@ -7,6 +7,13 @@
         "row": 1
     },
     {
+        "title": "First window - losses are high in this region so this window is used primarily for short-distance communication",
+        "start": 3.331e14,
+        "end": 3.747e14,
+        "bar": 2,
+        "row": 0
+    },
+    {
         "title": "Optical band U (ultralong wavelength)",
         "start": 1.79e14,
         "end": 1.845e14,
