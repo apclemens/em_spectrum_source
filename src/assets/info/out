@@ -1,298 +1,4 @@
-{"data": [
-    {
-        "title": "Radionavigation (government - non-government shared)",
-        "start": 9e3,
-        "end": 14e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed government maritime mobile / fixed non-government",
-        "start": 14e3,
-        "end": 19.95e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency and time signal",
-        "start": 19.95e3,
-        "end": 20.05e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Government maritime mobile / fixed government - non-government shared",
-        "start": 20.05e3,
-        "end": 59e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency and time signal",
-        "start": 59e3,
-        "end": 61e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Government maritime mobile / fixed government - non-government shared",
-        "start": 61e3,
-        "end": 70e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Government maritime mobile / fixed government - non-government shared radiolocation",
-        "start": 70e3,
-        "end": 90e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Government - non-government shared radionavigation",
-        "start": 90e3,
-        "end": 110e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed government - non-government shared, maritime mobile / radiolocation",
-        "start": 110e3,
-        "end": 130e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed government - non-government shared maritime mobile",
-        "start": 130e3,
-        "end": 160e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Government maritime mobile / fixed government - non-government shared",
-        "start": 160e3,
-        "end": 190e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical radionavigation",
-        "start": 190e3,
-        "end": 200e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical radionavigation / aeronautical mobile",
-        "start": 200e3,
-        "end": 275e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical radionavigation / aeronautical mobile / maritime radionavigation (radio beacons)",
-        "start": 275e3,
-        "end": 285e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": " Radio beacons: maritime radionavigation / aeronautical radionavigation",
-        "start": 285e3,
-        "end": 325e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical radionavigation (radio beacons) / maritime radionavigation (radio beacons) / aeronautical mobile",
-        "start": 325e3,
-        "end": 335e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical radionavigation (radio beacons) / aeronautical mobile",
-        "start": 335e3,
-        "end": 405e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Radionavigation / Aeronautical mobile",
-        "start": 405e3,
-        "end": 415e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile / aeronautical radionavigation",
-        "start": 415e3,
-        "end": 435e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile / aeronautical radionavigation (government)",
-        "start": 435e3,
-        "end": 495e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Mobile (distress and calling)",
-        "start": 495e3,
-        "end": 505e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile",
-        "start": 505e3,
-        "end": 510e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical radionavigation (radio beacons) / maritime mobile (ships only)",
-        "start": 510e3,
-        "end": 525e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical radionavigation (radio beacons) / mobile",
-        "start": 525e3,
-        "end": 535e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Broadcasting (AM Radio)",
-        "start": 535e3,
-        "end": 1605e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Broadcasting (non-government) / mobile (government)",
-        "start": 1605e3,
-        "end": 1615e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Broadcasting",
-        "start": 1615e3,
-        "end": 1705e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile radiolocation",
-        "start": 1705e3,
-        "end": 1800e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Amateur",
-        "start": 1800e3,
-        "end": 1900e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Radiolocation",
-        "start": 1900e3,
-        "end": 2000e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile (non-government) / Fixed mobile (government)",
-        "start": 2000e3,
-        "end": 2065e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile (telephony)",
-        "start": 2065e3,
-        "end": 2107e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed: maritime/land mobile (non-government) / mobile (government)",
-        "start": 2107e3,
-        "end": 2170e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile (telephony)",
-        "start": 2170e3,
-        "end": 2173.5e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Mobile (distress and calling)",
-        "start": 2173.5e3,
-        "end": 2190.5e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile (telephony)",
-        "start": 2190.5e3,
-        "end": 2194e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed: maritime/land mobile (non-governnment) / mobile (government)",
-        "start": 2194e3,
-        "end": 2495e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency and time signal (2500 kHz)",
-        "start": 2495e3,
-        "end": 2501e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency / space research (government)",
-        "start": 2501e3,
-        "end": 2502e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency and time signal",
-        "start": 2502e3,
-        "end": 2505e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed: maritime/land mobile (non-government) / mobile (government)",
-        "start": 2505e3,
-        "end": 2850e3,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical mobile (R)",
-        "start": 2850e3,
-        "end": 3.025e6,
-        "bar": 2,
-        "row": 0
-    },
+,
     {
         "title": "Aeronautical mobile (OR)",
         "start": 3025000,
@@ -331,13 +37,13 @@
     {
         "title": "Fixed maritime mobile",
         "start": 4000000,
-        "end": 4.063e6,
+        "end": 4063000,
         "bar": 2,
         "row": 0
     },
     {
         "title": "Maritime mobile",
-        "start": 4.063e6,
+        "start": 4406300,
         "end": 4438000,
         "bar": 2,
         "row": 0
@@ -695,13 +401,13 @@
     {
         "title": "Fixed mobile (except aero mobile)",
         "start": 13870000,
-        "end": 14e6,
+        "end": 14600000,
         "bar": 2,
         "row": 0
     },
     {
         "title": "Amateur / amateur satellite",
-        "start": 14e6,
+        "start": 14600000,
         "end": 14250000,
         "bar": 2,
         "row": 0
@@ -1105,4 +811,3 @@
         "bar": 2,
         "row": 0
     }
-]}
