@@ -40,7 +40,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 .markings {
     font-family: 'Roboto Mono', monospace;
     position: absolute;

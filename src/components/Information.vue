@@ -93,6 +93,7 @@ export default {
     pointer-events: none;
     position: relative;
     display: inline-block;
+    font-family: 'Merriweather', serif;
 }
 .tick {
     width: auto !important;

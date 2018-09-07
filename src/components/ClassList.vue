@@ -111,5 +111,6 @@ export default {
 .classlist td span {
     position: absolute;
     top: 0;
+    font-family: 'Raleway', sans-serif;
 }
 </style>

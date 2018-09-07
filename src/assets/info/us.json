@@ -1104,5 +1104,439 @@
         "end": 30000000,
         "bar": 2,
         "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 30000000,
+        "end": 30560000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed land mobile",
+        "start": 30560000,
+        "end": 32000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 32000000,
+        "end": 33000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed land mobile",
+        "start": 33000000,
+        "end": 34000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 34000000,
+        "end": 35000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed land mobile",
+        "start": 35000000,
+        "end": 36000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 36000000,
+        "end": 37000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government land mobile",
+        "start": 37000000,
+        "end": 37500000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Radio astronomy / non-government land mobile",
+        "start": 37500000,
+        "end": 38000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Radio astronomy / government fixed mobile",
+        "start": 38000000,
+        "end": 38250000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 38250000,
+        "end": 39000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government land mobile",
+        "start": 39000000,
+        "end": 40000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 40000000,
+        "end": 42000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed land mobile",
+        "start": 42000000,
+        "end": 43690000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government land mobile",
+        "start": 43690000,
+        "end": 46600000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 46600000,
+        "end": 47000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government land mobile",
+        "start": 47000000,
+        "end": 49600000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 49600000,
+        "end": 50000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Amateur",
+        "start": 50000000,
+        "end": 54000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Broadcasting (TV channels 2-4)",
+        "start": 54000000,
+        "end": 72000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed mobile",
+        "start": 72000000,
+        "end": 73000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Radio astronomy",
+        "start": 73000000,
+        "end": 74600000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Fixed mobile",
+        "start": 74600000,
+        "end": 74800000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Aeronautical radionavigation",
+        "start": 74800000,
+        "end": 75200000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Fixed mobile",
+        "start": 75200000,
+        "end": 75400000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed mobile",
+        "start": 75400000,
+        "end": 76000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Broadcasting (TV channels 5-6)",
+        "start": 76000000,
+        "end": 88000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Broadcasting (FM radio)",
+        "start": 88000000,
+        "end": 108000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Aeronautical radionavigation",
+        "start": 108000000,
+        "end": 117975000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Aeronautical mobile ®",
+        "start": 117975000,
+        "end": 121937500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government aeronautical mobile",
+        "start": 121937500,
+        "end": 123087500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Aeronautical mobile",
+        "start": 123087500,
+        "end": 123587500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Aeronautical mobile ®",
+        "start": 123587500,
+        "end": 128812500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government aeronautical mobile ®",
+        "start": 128812500,
+        "end": 132012500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Aeronautical mobile ®",
+        "start": 132012500,
+        "end": 136000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government aeronautical mobile ®",
+        "start": 136000000,
+        "end": 137000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Mobile satellite / space research / space operation / meteorological aids",
+        "start": 137000000,
+        "end": 138000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 138000000,
+        "end": 144000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Amateur / amateur satellite",
+        "start": 144000000,
+        "end": 146000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Amateur",
+        "start": 146000000,
+        "end": 148000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Mobile satellite / government fixed mobile",
+        "start": 148000000,
+        "end": 149900000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Radionavigation satellite / mobile satellite",
+        "start": 149900000,
+        "end": 150050000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 150050000,
+        "end": 150800000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed land mobile",
+        "start": 150800000,
+        "end": 152855000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government land mobile",
+        "start": 152855000,
+        "end": 154000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed land mobile",
+        "start": 154000000,
+        "end": 156247500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government maritime mobile",
+        "start": 156247500,
+        "end": 157037500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government maritime mobile",
+        "start": 157037500,
+        "end": 157187500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government maritime mobile / land mobile",
+        "start": 157187500,
+        "end": 157450000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed / land mobile",
+        "start": 157450000,
+        "end": 161575000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government maritime mobile",
+        "start": 161575000,
+        "end": 161625000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government land mobile",
+        "start": 161625000,
+        "end": 161775000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government maritime mobile / land mobile",
+        "start": 161775000,
+        "end": 162012500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 162012500,
+        "end": 173200000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed / land mobile",
+        "start": 173200000,
+        "end": 173400000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed / mobile",
+        "start": 173400000,
+        "end": 174000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Broadcasting (TV channels 7-13)",
+        "start": 174000000,
+        "end": 216000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed, mobile, radiolocation / non-government fixed, mobile, amateur",
+        "start": 216000000,
+        "end": 220000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Fixed, land mobile / Government radiolocation",
+        "start": 220000000,
+        "end": 222000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Amateur / government radiolocation",
+        "start": 222000000,
+        "end": 225000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed / mobile",
+        "start": 225000000,
+        "end": 235000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed / mobile satellite / mobile",
+        "start": 235000000,
+        "end": 322000000,
+        "bar": 2,
+        "row": 0
     }
 ]}

@@ -74,10 +74,14 @@ function pos_to_freq(startFreq, endFreq, pos) {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Special+Elite|Merriweather|Raleway');
+
 h1 {
     margin: 0;
     height: 10%;
     text-align: center;
+    font-size: 10vh;
+    font-family: 'Special Elite', cursive;
 }
 html, body {
     height: 100%;

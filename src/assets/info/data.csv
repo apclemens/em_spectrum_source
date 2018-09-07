@@ -1,116 +1,62 @@
-Aeronautical mobile (OR),3025000,3155000
-Fixed mobile (except aero mobile (R)),3155000,3230000
-Fixed mobile (except aero mobile) / radiolocation,3230000,3400000
-Aeronautical mobile (R),3400000,3500000
-Amateur,3500000,4000000
-Fixed maritime mobile,4000000,4063000
-Maritime mobile,4406300,4438000
-Fixed mobile (except aero mobile (R)),4438000,4650000
-Aeronautical mobile (R),4650000,4700000
-Aeronautical mobile (OR),4700000,4750000
-Fixed mobile (except aero mobile (R)),4750000,4850000
-Government mobile / shared fixed,4850000,4995000
-Standard frequency and time signal (5000 kHz),4995000,5003000
-Standard frequency / government space research,5003000,5005000
-Fixed,5005000,5060000
-Fixed mobile (except aero mobile),5060000,5450000
-Aeronautical mobile (R),5450000,5680000
-Aeronautical mobile (OR),5680000,5730000
-Fixed mobile (except aero mobile),5730000,5900000
-Fixed mobile (except aero mobile) / broadcasting,5900000,5950000
-Broadcasting,5950000,6200000
-Maritime mobile,6200000,6525000
-Aeronautical mobile (R),6525000,6685000
-Aeronautical mobile (OR),6685000,6765000
-Fixed mobile,6765500,7000000
-Amateur / amateur satellite,7000000,7100000
-Amateur,7100000,7300000
-Fixed mobile / broadcasting,7300000,7350000
-Fixed mobile,7350000,8100000
-Fixed maritime mobile,8100000,8195000
-Maritime mobile,8195000,8815000
-Aeronautical mobile (R),8815000,8965000
-Aeronautical mobile (OR),8965000,9040000
-Fixed,9040000,9400000
-Fixed broadcasting,9400000,9500000
-Broadcasting,9500000,9900000
-Fixed,9900000,9995000
-"Standard frequency and time signal (10,000 kHz)",9995000,10003000
-Standard frequency / government space research,10003000,10005000
-Aeronautical mobile (R),10005000,10100000
-Amateur,10100000,10150000
-Fixed mobile (except aero mobile),10150000,11175000
-Aeronautical mobile (OR),11175000,11275000
-Aeronautical mobile (R),11275000,11400000
-Fixed,11400000,11600000
-Fixed broadcasting,11600000,11650000
-Broadcasting,11650000,12050000
-Fixed broadcasting,12050000,12100000
-Fixed,12100000,12240000
-Maritime mobile,12240000,13200000
-Aeronautical mobile (OR),13200000,13260000
-Aeronautical mobile (R),13260000,13360000
-Radioastronomy,13360000,13410000
-Fixed mobile (except aero mobile),13410000,13570000
-Fixed mobile (except aero mobile) / broadcasting,13570000,13600000
-Broadcasting,13600000,13800000
-Fixed mobile (except aero mobile) / broadcasting,13800000,13870000
-Fixed mobile (except aero mobile),13870000,14600000
-Amateur / amateur satellite,14600000,14250000
-Amateur,14250000,14350000
-Fixed mobile (except aero mobile),14350000,14990000
-"Standard frequency and time signal (15,000 kHz)",14990000,15005000
-Standard frequency / government space research,15005000,15010000
-Aeronautical mobile (OR),15010000,15100000
-Broadcasting,15100000,15600000
-Fixed broadcasting,15600000,15800000
-Fixed,15800000,16360000
-Maritime mobile,16360000,17410000
-Fixed,17410000,17480000
-Fixed broadcasting,17480000,17550000
-Broadcasting,17550000,17900000
-Aeronautical mobile (R),17900000,17970000
-Aeronautical mobile (OR),17970000,18030000
-Fixed,18030000,18068000
-Amateur / amateur satellite,18068000,18168000
-Fixed mobile,18168000,18780000
-Maritime mobile,18780000,18900000
-Fixed broadcasting,18900000,19020000
-Fixed,19020000,19680000
-Maritime mobile,19680000,19800000
-Fixed,19800000,19990000
-Standard frequency / government space research,19990000,19995000
-"Standard frequency and time signal (20,000 kHz)",19995000,20005000
-Standard frequency / government space research,20005000,20010000
-Government mobile / shared fixed,20010000,21000000
-Amateur / amateur satellite,21000000,21450000
-Broadcasting,21450000,21850000
-Fixed,21850000,21924000
-Aeronautical mobile (R),21924000,22000000
-Maritime mobile,22000000,22855000
-Fixed,22855000,23000000
-Government mobile (except aero mobile (R)) / shared fixed,23000000,23200000
-Aeronautical mobile (OR),23200000,23350000
-Government mobile (except aero mobile) / shared fixed,23350000,24890000
-Amateur / amateur satellite,24890000,24990000
-"Standard frequency and time signal (25,000 kHz)",24990000,25005000
-Standard frequency / government space research,25005000,25010000
-Land mobile,25010000,25070000
-Maritime mobile,25070000,25210000
-Land mobile,25210000,25330000
-Fixed mobile (except aero mobile),25330000,25550000
-Radioastronomy,25550000,25670000
-Broadcasting,25670000,26100000
-Maritime mobile,26100000,26175000
-Land mobile,26175000,26480000
-Fixed mobile (except aero mobile),26480000,26950000
-Fixed,26950000,26960000
-Mobile (except aero mobile),26960000,27230000
-Fixed mobile (except aero mobile),27230000,27410000
-Fixed land mobile,27410000,27540000
-Fixed mobile,27540000,28000000
-Amateur / amateur satellite,28000000,29700000
-Land mobile,29700000,29800000
-Fixed,29800000,29890000
-Fixed mobile,29890000,29910000
-Fixed,29910000,30000000
+Government fixed mobile,30000000,30560000
+Non-government fixed land mobile,30560000,32000000
+Government fixed mobile,32000000,33000000
+Non-government fixed land mobile,33000000,34000000
+Government fixed mobile,34000000,35000000
+Non-government fixed land mobile,35000000,36000000
+Government fixed mobile,36000000,37000000
+Non-government land mobile,37000000,37500000
+Radio astronomy / non-government land mobile,37500000,38000000
+Radio astronomy / government fixed mobile,38000000,38250000
+Government fixed mobile,38250000,39000000
+Non-government land mobile,39000000,40000000
+Government fixed mobile,40000000,42000000
+Non-government fixed land mobile,42000000,43690000
+Non-government land mobile,43690000,46600000
+Government fixed mobile,46600000,47000000
+Non-government land mobile,47000000,49600000
+Government fixed mobile,49600000,50000000
+Amateur,50000000,54000000
+Broadcasting (TV channels 2-4),54000000,72000000
+Non-government fixed mobile,72000000,73000000
+Radio astronomy,73000000,74600000
+Fixed mobile,74600000,74800000
+Aeronautical radionavigation,74800000,75200000
+Fixed mobile,75200000,75400000
+Non-government fixed mobile,75400000,76000000
+Broadcasting (TV channels 5-6),76000000,88000000
+Broadcasting (FM radio),88000000,108000000
+Aeronautical radionavigation,108000000,117975000
+Aeronautical mobile ®,117975000,121937500
+Non-government aeronautical mobile,121937500,123087500
+Aeronautical mobile,123087500,123587500
+Aeronautical mobile ®,123587500,128812500
+Non-government aeronautical mobile ®,128812500,132012500
+Aeronautical mobile ®,132012500,136000000
+Non-government aeronautical mobile ®,136000000,137000000
+Mobile satellite / space research / space operation / meteorological aids,137000000,138000000
+Government fixed mobile,138000000,144000000
+Amateur / amateur satellite,144000000,146000000
+Amateur,146000000,148000000
+Mobile satellite / government fixed mobile,148000000,149900000
+Radionavigation satellite / mobile satellite,149900000,150050000
+Government fixed mobile,150050000,150800000
+Non-government fixed land mobile,150800000,152855000
+Non-government land mobile,152855000,154000000
+Non-government fixed land mobile,154000000,156247500
+Non-government maritime mobile,156247500,157037500
+Government maritime mobile,157037500,157187500
+Non-government maritime mobile / land mobile,157187500,157450000
+Non-government fixed / land mobile,157450000,161575000
+Non-government maritime mobile,161575000,161625000
+Non-government land mobile,161625000,161775000
+Non-government maritime mobile / land mobile,161775000,162012500
+Government fixed mobile,162012500,173200000
+Non-government fixed / land mobile,173200000,173400000
+Government fixed / mobile,173400000,174000000
+Broadcasting (TV channels 7-13),174000000,216000000
+"Government fixed, mobile, radiolocation / non-government fixed, mobile, amateur",216000000,220000000
+"Fixed, land mobile / Government radiolocation",220000000,222000000
+Amateur / government radiolocation,222000000,225000000
+Government fixed / mobile,225000000,235000000
+Government fixed / mobile satellite / mobile,235000000,322000000

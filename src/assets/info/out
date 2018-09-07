@@ -1,813 +1,435 @@
 ,
     {
-        "title": "Aeronautical mobile (OR)",
-        "start": 3025000,
-        "end": 3155000,
+        "title": "Government fixed mobile",
+        "start": 30000000,
+        "end": 30560000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile (R))",
-        "start": 3155000,
-        "end": 3230000,
+        "title": "Non-government fixed land mobile",
+        "start": 30560000,
+        "end": 32000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile) / radiolocation",
-        "start": 3230000,
-        "end": 3400000,
+        "title": "Government fixed mobile",
+        "start": 32000000,
+        "end": 33000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (R)",
-        "start": 3400000,
-        "end": 3500000,
+        "title": "Non-government fixed land mobile",
+        "start": 33000000,
+        "end": 34000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Amateur",
-        "start": 3500000,
-        "end": 4000000,
+        "title": "Government fixed mobile",
+        "start": 34000000,
+        "end": 35000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed maritime mobile",
-        "start": 4000000,
-        "end": 4063000,
+        "title": "Non-government fixed land mobile",
+        "start": 35000000,
+        "end": 36000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Maritime mobile",
-        "start": 4406300,
-        "end": 4438000,
+        "title": "Government fixed mobile",
+        "start": 36000000,
+        "end": 37000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile (R))",
-        "start": 4438000,
-        "end": 4650000,
+        "title": "Non-government land mobile",
+        "start": 37000000,
+        "end": 37500000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (R)",
-        "start": 4650000,
-        "end": 4700000,
+        "title": "Radio astronomy / non-government land mobile",
+        "start": 37500000,
+        "end": 38000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (OR)",
-        "start": 4700000,
-        "end": 4750000,
+        "title": "Radio astronomy / government fixed mobile",
+        "start": 38000000,
+        "end": 38250000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile (R))",
-        "start": 4750000,
-        "end": 4850000,
+        "title": "Government fixed mobile",
+        "start": 38250000,
+        "end": 39000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Government mobile / shared fixed",
-        "start": 4850000,
-        "end": 4995000,
+        "title": "Non-government land mobile",
+        "start": 39000000,
+        "end": 40000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Standard frequency and time signal (5000 kHz)",
-        "start": 4995000,
-        "end": 5003000,
+        "title": "Government fixed mobile",
+        "start": 40000000,
+        "end": 42000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Standard frequency / government space research",
-        "start": 5003000,
-        "end": 5005000,
+        "title": "Non-government fixed land mobile",
+        "start": 42000000,
+        "end": 43690000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed",
-        "start": 5005000,
-        "end": 5060000,
+        "title": "Non-government land mobile",
+        "start": 43690000,
+        "end": 46600000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile)",
-        "start": 5060000,
-        "end": 5450000,
+        "title": "Government fixed mobile",
+        "start": 46600000,
+        "end": 47000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (R)",
-        "start": 5450000,
-        "end": 5680000,
+        "title": "Non-government land mobile",
+        "start": 47000000,
+        "end": 49600000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (OR)",
-        "start": 5680000,
-        "end": 5730000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile (except aero mobile)",
-        "start": 5730000,
-        "end": 5900000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile (except aero mobile) / broadcasting",
-        "start": 5900000,
-        "end": 5950000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Broadcasting",
-        "start": 5950000,
-        "end": 6200000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile",
-        "start": 6200000,
-        "end": 6525000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical mobile (R)",
-        "start": 6525000,
-        "end": 6685000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical mobile (OR)",
-        "start": 6685000,
-        "end": 6765000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile",
-        "start": 6765500,
-        "end": 7000000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Amateur / amateur satellite",
-        "start": 7000000,
-        "end": 7100000,
+        "title": "Government fixed mobile",
+        "start": 49600000,
+        "end": 50000000,
         "bar": 2,
         "row": 0
     },
     {
         "title": "Amateur",
-        "start": 7100000,
-        "end": 7300000,
+        "start": 50000000,
+        "end": 54000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile / broadcasting",
-        "start": 7300000,
-        "end": 7350000,
+        "title": "Broadcasting (TV channels 2-4)",
+        "start": 54000000,
+        "end": 72000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government fixed mobile",
+        "start": 72000000,
+        "end": 73000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Radio astronomy",
+        "start": 73000000,
+        "end": 74600000,
         "bar": 2,
         "row": 0
     },
     {
         "title": "Fixed mobile",
-        "start": 7350000,
-        "end": 8100000,
+        "start": 74600000,
+        "end": 74800000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed maritime mobile",
-        "start": 8100000,
-        "end": 8195000,
+        "title": "Aeronautical radionavigation",
+        "start": 74800000,
+        "end": 75200000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Maritime mobile",
-        "start": 8195000,
-        "end": 8815000,
+        "title": "Fixed mobile",
+        "start": 75200000,
+        "end": 75400000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (R)",
-        "start": 8815000,
-        "end": 8965000,
+        "title": "Non-government fixed mobile",
+        "start": 75400000,
+        "end": 76000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (OR)",
-        "start": 8965000,
-        "end": 9040000,
+        "title": "Broadcasting (TV channels 5-6)",
+        "start": 76000000,
+        "end": 88000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed",
-        "start": 9040000,
-        "end": 9400000,
+        "title": "Broadcasting (FM radio)",
+        "start": 88000000,
+        "end": 108000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed broadcasting",
-        "start": 9400000,
-        "end": 9500000,
+        "title": "Aeronautical radionavigation",
+        "start": 108000000,
+        "end": 117975000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Broadcasting",
-        "start": 9500000,
-        "end": 9900000,
+        "title": "Aeronautical mobile ®",
+        "start": 117975000,
+        "end": 121937500,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed",
-        "start": 9900000,
-        "end": 9995000,
+        "title": "Non-government aeronautical mobile",
+        "start": 121937500,
+        "end": 123087500,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Standard frequency and time signal (10,000 kHz)",
-        "start": 9995000,
-        "end": 10003000,
+        "title": "Aeronautical mobile",
+        "start": 123087500,
+        "end": 123587500,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Standard frequency / government space research",
-        "start": 10003000,
-        "end": 10005000,
+        "title": "Aeronautical mobile ®",
+        "start": 123587500,
+        "end": 128812500,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (R)",
-        "start": 10005000,
-        "end": 10100000,
+        "title": "Non-government aeronautical mobile ®",
+        "start": 128812500,
+        "end": 132012500,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Aeronautical mobile ®",
+        "start": 132012500,
+        "end": 136000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Non-government aeronautical mobile ®",
+        "start": 136000000,
+        "end": 137000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Mobile satellite / space research / space operation / meteorological aids",
+        "start": 137000000,
+        "end": 138000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Government fixed mobile",
+        "start": 138000000,
+        "end": 144000000,
+        "bar": 2,
+        "row": 0
+    },
+    {
+        "title": "Amateur / amateur satellite",
+        "start": 144000000,
+        "end": 146000000,
         "bar": 2,
         "row": 0
     },
     {
         "title": "Amateur",
-        "start": 10100000,
-        "end": 10150000,
+        "start": 146000000,
+        "end": 148000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile)",
-        "start": 10150000,
-        "end": 11175000,
+        "title": "Mobile satellite / government fixed mobile",
+        "start": 148000000,
+        "end": 149900000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (OR)",
-        "start": 11175000,
-        "end": 11275000,
+        "title": "Radionavigation satellite / mobile satellite",
+        "start": 149900000,
+        "end": 150050000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (R)",
-        "start": 11275000,
-        "end": 11400000,
+        "title": "Government fixed mobile",
+        "start": 150050000,
+        "end": 150800000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed",
-        "start": 11400000,
-        "end": 11600000,
+        "title": "Non-government fixed land mobile",
+        "start": 150800000,
+        "end": 152855000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed broadcasting",
-        "start": 11600000,
-        "end": 11650000,
+        "title": "Non-government land mobile",
+        "start": 152855000,
+        "end": 154000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Broadcasting",
-        "start": 11650000,
-        "end": 12050000,
+        "title": "Non-government fixed land mobile",
+        "start": 154000000,
+        "end": 156247500,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed broadcasting",
-        "start": 12050000,
-        "end": 12100000,
+        "title": "Non-government maritime mobile",
+        "start": 156247500,
+        "end": 157037500,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed",
-        "start": 12100000,
-        "end": 12240000,
+        "title": "Government maritime mobile",
+        "start": 157037500,
+        "end": 157187500,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Maritime mobile",
-        "start": 12240000,
-        "end": 13200000,
+        "title": "Non-government maritime mobile / land mobile",
+        "start": 157187500,
+        "end": 157450000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (OR)",
-        "start": 13200000,
-        "end": 13260000,
+        "title": "Non-government fixed / land mobile",
+        "start": 157450000,
+        "end": 161575000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Aeronautical mobile (R)",
-        "start": 13260000,
-        "end": 13360000,
+        "title": "Non-government maritime mobile",
+        "start": 161575000,
+        "end": 161625000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Radioastronomy",
-        "start": 13360000,
-        "end": 13410000,
+        "title": "Non-government land mobile",
+        "start": 161625000,
+        "end": 161775000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile)",
-        "start": 13410000,
-        "end": 13570000,
+        "title": "Non-government maritime mobile / land mobile",
+        "start": 161775000,
+        "end": 162012500,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile) / broadcasting",
-        "start": 13570000,
-        "end": 13600000,
+        "title": "Government fixed mobile",
+        "start": 162012500,
+        "end": 173200000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Broadcasting",
-        "start": 13600000,
-        "end": 13800000,
+        "title": "Non-government fixed / land mobile",
+        "start": 173200000,
+        "end": 173400000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile) / broadcasting",
-        "start": 13800000,
-        "end": 13870000,
+        "title": "Government fixed / mobile",
+        "start": 173400000,
+        "end": 174000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile)",
-        "start": 13870000,
-        "end": 14600000,
+        "title": "Broadcasting (TV channels 7-13)",
+        "start": 174000000,
+        "end": 216000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Amateur / amateur satellite",
-        "start": 14600000,
-        "end": 14250000,
+        "title": "Government fixed, mobile, radiolocation / non-government fixed, mobile, amateur",
+        "start": 216000000,
+        "end": 220000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Amateur",
-        "start": 14250000,
-        "end": 14350000,
+        "title": "Fixed, land mobile / Government radiolocation",
+        "start": 220000000,
+        "end": 222000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Fixed mobile (except aero mobile)",
-        "start": 14350000,
-        "end": 14990000,
+        "title": "Amateur / government radiolocation",
+        "start": 222000000,
+        "end": 225000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Standard frequency and time signal (15,000 kHz)",
-        "start": 14990000,
-        "end": 15005000,
+        "title": "Government fixed / mobile",
+        "start": 225000000,
+        "end": 235000000,
         "bar": 2,
         "row": 0
     },
     {
-        "title": "Standard frequency / government space research",
-        "start": 15005000,
-        "end": 15010000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical mobile (OR)",
-        "start": 15010000,
-        "end": 15100000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Broadcasting",
-        "start": 15100000,
-        "end": 15600000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed broadcasting",
-        "start": 15600000,
-        "end": 15800000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 15800000,
-        "end": 16360000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile",
-        "start": 16360000,
-        "end": 17410000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 17410000,
-        "end": 17480000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed broadcasting",
-        "start": 17480000,
-        "end": 17550000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Broadcasting",
-        "start": 17550000,
-        "end": 17900000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical mobile (R)",
-        "start": 17900000,
-        "end": 17970000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical mobile (OR)",
-        "start": 17970000,
-        "end": 18030000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 18030000,
-        "end": 18068000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Amateur / amateur satellite",
-        "start": 18068000,
-        "end": 18168000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile",
-        "start": 18168000,
-        "end": 18780000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile",
-        "start": 18780000,
-        "end": 18900000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed broadcasting",
-        "start": 18900000,
-        "end": 19020000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 19020000,
-        "end": 19680000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile",
-        "start": 19680000,
-        "end": 19800000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 19800000,
-        "end": 19990000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency / government space research",
-        "start": 19990000,
-        "end": 19995000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency and time signal (20,000 kHz)",
-        "start": 19995000,
-        "end": 20005000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency / government space research",
-        "start": 20005000,
-        "end": 20010000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Government mobile / shared fixed",
-        "start": 20010000,
-        "end": 21000000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Amateur / amateur satellite",
-        "start": 21000000,
-        "end": 21450000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Broadcasting",
-        "start": 21450000,
-        "end": 21850000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 21850000,
-        "end": 21924000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical mobile (R)",
-        "start": 21924000,
-        "end": 22000000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile",
-        "start": 22000000,
-        "end": 22855000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 22855000,
-        "end": 23000000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Government mobile (except aero mobile (R)) / shared fixed",
-        "start": 23000000,
-        "end": 23200000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Aeronautical mobile (OR)",
-        "start": 23200000,
-        "end": 23350000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Government mobile (except aero mobile) / shared fixed",
-        "start": 23350000,
-        "end": 24890000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Amateur / amateur satellite",
-        "start": 24890000,
-        "end": 24990000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency and time signal (25,000 kHz)",
-        "start": 24990000,
-        "end": 25005000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Standard frequency / government space research",
-        "start": 25005000,
-        "end": 25010000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Land mobile",
-        "start": 25010000,
-        "end": 25070000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile",
-        "start": 25070000,
-        "end": 25210000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Land mobile",
-        "start": 25210000,
-        "end": 25330000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile (except aero mobile)",
-        "start": 25330000,
-        "end": 25550000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Radioastronomy",
-        "start": 25550000,
-        "end": 25670000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Broadcasting",
-        "start": 25670000,
-        "end": 26100000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Maritime mobile",
-        "start": 26100000,
-        "end": 26175000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Land mobile",
-        "start": 26175000,
-        "end": 26480000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile (except aero mobile)",
-        "start": 26480000,
-        "end": 26950000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 26950000,
-        "end": 26960000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Mobile (except aero mobile)",
-        "start": 26960000,
-        "end": 27230000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile (except aero mobile)",
-        "start": 27230000,
-        "end": 27410000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed land mobile",
-        "start": 27410000,
-        "end": 27540000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile",
-        "start": 27540000,
-        "end": 28000000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Amateur / amateur satellite",
-        "start": 28000000,
-        "end": 29700000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Land mobile",
-        "start": 29700000,
-        "end": 29800000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 29800000,
-        "end": 29890000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed mobile",
-        "start": 29890000,
-        "end": 29910000,
-        "bar": 2,
-        "row": 0
-    },
-    {
-        "title": "Fixed",
-        "start": 29910000,
-        "end": 30000000,
+        "title": "Government fixed / mobile satellite / mobile",
+        "start": 235000000,
+        "end": 322000000,
         "bar": 2,
         "row": 0
     }
