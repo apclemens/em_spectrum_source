@@ -2,7 +2,7 @@
     <div class="preview"
          v-on:mousedown="mouseDown"
          v-bind:style="{left: leftPos + 'px'}"
-         v-bind:class="{moving: moving != 0, onLeft: leftPosFrac() < 0, onRight: leftPosFrac() > .9}"
+         v-bind:class="{moving: moving != 0, onLeft: leftPosFrac() < -.045, onRight: leftPosFrac() > .95}"
         >
     </div>
 </template>
@@ -33,7 +33,6 @@ export default {
     border-right: 2px solid black;
     cursor: grab;
     transform: translateX(calc(.5vw - 2px));
-    transition: background-color .5s linear;
 }
 .preview.moving {
     cursor: grabbing;

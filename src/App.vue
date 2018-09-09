@@ -38,7 +38,7 @@ export default {
       return {
           moving: -1,
           centerPositions: [centerPos, centerPos, centerPos, centerPos],
-          centerFrequencyRanges: [[3e0, 3e2], [3e0, 3e1], [1, 1], [1, 1]],
+          centerFrequencyRanges: [[3e0, 3e2], [3e0, 3e1], [3e0, 3*(10**(1/2))], [3e0, 3*(10**(1/4))]],
           information: BandInfo.data().information,
       }
   },

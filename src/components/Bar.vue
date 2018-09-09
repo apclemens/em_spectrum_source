@@ -55,6 +55,9 @@ export default {
             placements: [0,0,0,0,0,0,0,0,0,0,0],
         }
     },
+    mounted() {
+        this.movePreview(false);
+    },
     methods: {
         mouseUp: function() {
             this.moving = 0;
@@ -75,8 +78,8 @@ export default {
             }
         },
         movePreview: function(event) {
-            if(!this.moving) return;
-            this.leftPos = event.x - this.moving;
+            if(event && !this.moving) return;
+            if(event) this.leftPos = event.x - this.moving;
             this.$emit('updatePositions', this.leftPos);
 
             var A = this.centerFrequencyRanges[this.scale][0];
