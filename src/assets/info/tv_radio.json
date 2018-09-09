@@ -4,41 +4,47 @@
         "start": 47e6,
         "end": 68e6,
         "bar": 1,
-        "row": 3
+        "row": 3,
+        "wiki": "Band_I"
     },
     {
         "title": "Band II",
         "start": 87.5e6,
         "end": 108e6,
         "bar": 1,
-        "row": 3
+        "row": 3,
+        "wiki": "Band_II"
     },
     {
         "title": "Band III",
         "start": 174e6,
         "end": 240e6,
         "bar": 1,
-        "row": 3
+        "row": 3,
+        "wiki": "Band_III"
     },
     {
         "title": "Band IV",
         "start": 470e6,
         "end": 582e6,
         "bar": 1,
-        "row": 3
+        "row": 3,
+        "wiki": "Band_IV"
     },
     {
         "title": "Band V",
         "start": 614e6,
         "end": 854e6,
         "bar": 1,
-        "row": 3
+        "row": 3,
+        "wiki": "Band_V"
     },
     {
         "title": "Band VI",
         "start": 11.7e9,
         "end": 12.5e9,
         "bar": 1,
-        "row": 3
+        "row": 3,
+        "wiki": "Band_VI"
     }
 ]}

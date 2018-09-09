@@ -4,90 +4,103 @@
         "start": 3,
         "end": 250e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "A_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band B",
         "start": 250e6,
         "end": 500e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "B_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band C",
         "start": 500e6,
         "end": 1000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "C_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band D",
         "start": 1000e6,
         "end": 2000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "D_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band E",
         "start": 2000e6,
         "end": 3000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "E_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band F",
         "start": 3000e6,
         "end": 4000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "F_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band G",
         "start": 4000e6,
         "end": 6000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "G_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band H",
         "start": 6000e6,
         "end": 8000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "H_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band I",
         "start": 8000e6,
         "end": 10000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "I_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band J",
         "start": 10000e6,
         "end": 20000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "J_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band K",
         "start": 20000e6,
         "end": 40000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "K_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band L",
         "start": 40000e6,
         "end": 60000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "L_band_(NATO)"
     },
     {
         "title": "EU / NATO / US ECM band M",
         "start": 60000e6,
         "end": 100000e6,
         "bar": 1,
-        "row": 1
+        "row": 1,
+        "wiki": "M_band_(NATO)"
     }
 ]}

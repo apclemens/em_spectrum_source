@@ -9,10 +9,11 @@
             >
         </div>
         <div class="band" v-for="(band, index) in information" v-bind:class="{tick: band.start == band.end}" v-bind:key="index"
+            v-on:click="clickBand(band)"
             v-bind:style="{
                  left: frequency_to_position_information(band.start, scale)*100 + '%',
                  width: (frequency_to_position_information(band.end, scale)*100 - frequency_to_position_information(band.start, scale)*100) + '%',
-                 top: (29*band.row) + 'px'
+                 top: 'calc(' + 4.5*5/6*band.row + 'vh - ' + 6.25*5/6*band.row + 'px)'
             }"
         >
             <div class="info"
@@ -34,7 +35,25 @@ export default {
         }
     },
     methods: {
-        getLeftPos(startFreq) {
+        clickBand: function(band) {
+            /*
+            var url = 'https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&origin=*&rvsection=0&titles=' + band.wiki + '&format=json';
+            var http = new XMLHttpRequest();
+            http.open('GET', url);
+            http.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            var ths = this;
+            http.onload = function() {
+                if (http.status === 200) {
+                    var json = JSON.parse(http.responseText);
+                    var data = json.query.pages[Object.keys(json.query.pages)[0]].revisions[0]['*'];
+                    ths.$emit('showOverlay', data);
+                } else console.log(http);
+            }
+            http.send();
+            */
+            this.$emit('showOverlay', "//en.wikipedia.org/w/index.php?title=" + band.wiki + "&printable=yes");
+        },
+        getLeftPos: function(startFreq) {
             var startPos = this.frequency_to_position_information(startFreq, this.scale);
             if (startPos + this.translate > 0) return 0;
             return -90*(startPos + this.translate);
@@ -76,7 +95,8 @@ export default {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    height: 30px;
+    height: calc(3.75vh - 5.21px);
+    cursor: pointer;
 }
 .band:hover {
     overflow: visible;

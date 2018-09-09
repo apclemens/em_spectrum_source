@@ -4,76 +4,87 @@
         "end": 2.221e16,
         "start": 2.221e16,
         "bar": 2,
-        "row": 0
+        "row": 0,
+        "wiki": "Extreme_ultraviolet_lithography"
     },
     {
         "title": "Photoionization, ultraviolet photoelectron spectroscopy, standard integrated circuit manufacture by photolithography",
         "end": 9.993e15,
         "start": 1.499e15,
         "bar": 2,
-        "row": 0
+        "row": 0,
+        "wiki": "Photoionization"
     },
     {
         "title": "UV-ID, label tracking, barcodes",
         "end": 1.303e15,
         "start": 8.213e14,
         "bar": 2,
-        "row": 4
+        "row": 4,
+        "wiki": "Barcode"
     },
     {
         "title": "Optical sensors, various instrumentation",
         "end": 1.303e15,
         "start": 7.495e14,
         "bar": 2,
-        "row": 0
+        "row": 0,
+        "wiki": "Sensor"
     },
     {
         "title": "Disinfection, decontamination of surfaces and water (DNA absorption has a peak at 260 nm)",
         "end": 1.249e15,
         "start": 1.071e15,
         "bar": 2,
-        "row": 1
+        "row": 1,
+        "wiki": "Disinfectant"
     },
     {
         "title": "Forensic analysis, drug detection",
         "end": 1.499e14,
         "start": 7.495e14,
         "bar": 2,
-        "row": 2
+        "row": 2,
+        "wiki": "Forensic_science"
     },
     {
         "title": "Protein analysis, DNA sequencing, drug discovery",
         "end": 1.11e15,
         "start": 8.328e14,
         "bar": 2,
-        "row": 5
+        "row": 5,
+        "wiki": "Proteomics"
     },
     {
         "title": "Medical imaging of cells",
         "end": 1.071e15,
         "start": 7.495e14,
         "bar": 2,
-        "row": 1
+        "row": 1,
+        "wiki": "Medical_imaging"
     },
     {
         "title": "Light therapy in medicine",
         "end": 9.993e14,
         "start": 9.369e14,
         "bar": 2,
-        "row": 3
+        "row": 3,
+        "wiki": "Light_therapy"
     },
     {
         "title": "Curing of polymers and printer inks",
         "end": 9.993e14,
         "start": 8.213e14,
         "bar": 2,
-        "row": 2
+        "row": 2,
+        "wiki": "Curing_(chemistry)"
     },
     {
         "title": "Bug zappers (flies are most attracted to light at 365 nm)",
         "end": 8.565e14,
         "start": 8.102e14,
         "bar": 2,
-        "row": 3
+        "row": 3,
+        "wiki": "Bug_zapper"
     }
 ]}

@@ -18,6 +18,7 @@
                  v-else
                  v-bind:information="information"
                  v-bind:scale="scale"
+                 v-on:showOverlay="showOverlay($event)"
              />
         </div>
         <Markings 
@@ -59,6 +60,9 @@ export default {
         this.movePreview(false);
     },
     methods: {
+        showOverlay: function(e) {
+            this.$emit('showOverlay', e);
+        },
         mouseUp: function() {
             this.moving = 0;
         },
@@ -122,7 +126,7 @@ export default {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     margin: auto;
-    cursor: pointer;
+    cursor: grab;
 }
 .between {
     position: relative;
