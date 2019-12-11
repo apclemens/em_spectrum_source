@@ -5,7 +5,7 @@
             <tr>
                 <td width="5%">
                     <span>Extremely low frequency</span>
-                    <img src="./../assets/elf.jpg">
+                    <img src="./../assets/elf.png">
                 </td>
                 <td width="5%">
                     <span>Super low frequency</span>
@@ -45,7 +45,7 @@
                 </td>
                 <td width="5%">
                     <span>Extremely high frequency</span>
-                    <img src="./../assets/ehf.jpg">
+                    <img src="./../assets/ehf.png">
                 </td>
                 <td width="5%">
                     <span>Far infrared</span>
@@ -53,7 +53,7 @@
                 </td>
                 <td width="5%">
                     <span>Mid infrared</span>
-                    <img src="./../assets/mi.jpg">
+                    <img src="./../assets/mi.png">
                 </td>
                 <td width="5%">
                     <span>Near infrared</span>
@@ -112,5 +112,8 @@ export default {
     position: absolute;
     top: 0;
     font-family: 'Raleway', sans-serif;
+     -moz-transform: rotate(-58deg);  /* FF3.5+ */
+       -o-transform: rotate(-58deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(-58deg);  /* Saf3.1+, Chrome */
 }
 </style>
